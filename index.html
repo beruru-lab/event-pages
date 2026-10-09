@@ -201,6 +201,14 @@
   .day-item.is-new { background: #FFF8D6; border-color: #F0D97A; }
   .day-item .nm { font-weight: bold; margin: 2px 0; }
   .day-item a { color: var(--color-accent); }
+  .long-toggle { cursor: pointer; font-weight: bold; color: var(--color-text); }
+  .day-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .day-col h5 { margin: 0 0 6px; font-size: 0.9rem; }
+  .day-col.req h5 { color: #1d4ed8; }
+  .day-col.not h5 { color: #15803d; }
+  .day-none { color: var(--color-text-sub); font-size: 0.85rem; }
+  .day-item .period { color: var(--color-text-sub); font-size: 0.78rem; }
+  @media (max-width: 767px) { .day-cols { grid-template-columns: 1fr; } }
   @media (max-width: 700px) { .cal-months { grid-template-columns: 1fr; } }
   @media (max-width: 480px) {
     header h1 { font-size: 1.2rem; }
@@ -213,7 +221,7 @@
 <header>
   <h1>首都圏 子どもイベント情報</h1>
   <p>埼玉県・東京都・千葉県・神奈川県で開催される、小学生を中心とした子ども向けイベントまとめ</p>
-  <p id="last-updated">最終更新：2026年10月9日（金）12:30（日本時間）</p>
+  <p id="last-updated">最終更新：2026年10月10日（土）07:30（日本時間）</p>
 </header>
 
 <div class="container">
@@ -223,6 +231,7 @@
       <span><span class="dot dot-req"></span>応募が必要</span>
       <span><span class="dot dot-not"></span>応募不要</span>
       <span>（日付をタップするとその日のイベントを表示）</span>
+      <label class="long-toggle"><input type="checkbox" id="long-toggle"> 長期イベント（開催期間7日以上）を含める</label>
     </div>
     <div class="cal-months" id="cal-months"></div>
     <div class="day-list" id="day-list" hidden></div>
@@ -349,25 +358,6 @@
           <div class="info-row"><b>締切：</b>2026/11/15（日）または先着800名になり次第終了</div>
           <a class="official" href="https://www.saitama-arena.co.jp/event/rogaining26/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
         </div>
-
-        
-        <div class="card" data-dates="2026-11-07">
-          <span class="facility">北本まつり宵まつり</span>
-          <h3>大俵引き 小学生の部</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-free">無料</span>
-            <span class="tag tag-deadline">まもなく締切</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/7（土）15:00〜16:00頃</div>
-          <div class="info-row"><b>場所：</b>埼玉県北本市（北本駅西口交差点）</div>
-          <div class="info-row"><b>対象：</b>小学生（定員約100名）</div>
-          <div class="info-row"><b>参加方法：</b>専用Webフォーム／団体申込書（郵送・FAX・メール）／電話で事前申込（先着）</div>
-          <div class="info-row"><b>締切：</b>2026/10/9（金）</div>
-          <a class="official" href="https://www.city.kitamoto.lg.jp/kanko/event/aki/15627.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
       </div>
     </div>
 
@@ -1277,59 +1267,85 @@ function showTab(id) {
   var pad=function(n){return n<10?'0'+n:''+n;};
   var iso=function(y,m,d){return y+'-'+pad(m+1)+'-'+pad(d);};
   var todayIso=iso(today.getFullYear(),today.getMonth(),today.getDate());
-  var map={};
+  var items=[];
   document.querySelectorAll('.card[data-dates]').forEach(function(c){
-    var tab=c.closest('.tab-content').id;
-    var item={
-      type:tab,
+    var dates=c.dataset.dates.split(',').filter(Boolean).sort();
+    if(!dates.length)return;
+    items.push({
+      type:c.closest('.tab-content').id,
       name:c.querySelector('h3').textContent,
       fac:(c.querySelector('.facility')||{}).textContent||'',
       pref:c.closest('.pref-section').querySelector('.pref-title').textContent,
       url:(c.querySelector('a.official')||{}).href||'',
-      isNew:c.classList.contains('is-new')||!!c.querySelector('.tag-new')
-    };
-    c.dataset.dates.split(',').forEach(function(d){
-      if(!d)return; (map[d]=map[d]||[]).push(item);
+      isNew:c.classList.contains('is-new')||!!c.querySelector('.tag-new'),
+      dates:dates,n:dates.length,first:dates[0],last:dates[dates.length-1]
     });
   });
-  var box=document.getElementById('cal-months'),list=document.getElementById('day-list'),sel=null;
+  var box=document.getElementById('cal-months'),list=document.getElementById('day-list'),chk=document.getElementById('long-toggle'),sel=null;
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  for(var k=0;k<3;k++){
-    var y=today.getFullYear(),m=today.getMonth()+k;
-    var first=new Date(y,m,1);y=first.getFullYear();m=first.getMonth();
-    var days=new Date(y,m+1,0).getDate();
-    var h='<div class="cal-month"><h4>'+y+'年'+(m+1)+'月</h4><div class="cal-grid">';
-    DOW.forEach(function(w){h+='<div class="cal-dow">'+w+'</div>';});
-    for(var i=0;i<first.getDay();i++)h+='<div></div>';
-    for(var d=1;d<=days;d++){
-      var key=iso(y,m,d),ev=map[key],cls='cal-day';
-      if(key<todayIso)cls+=' past';
-      if(key===todayIso)cls+=' today';
-      var dots='';
-      if(ev){
-        cls+=' has';
-        var r=ev.some(function(e){return e.type==='required';}),n=ev.some(function(e){return e.type==='notrequired';});
-        if(r)dots+='<span class="dot dot-req"></span>';
-        if(n)dots+='<span class="dot dot-not"></span>';
+  function md(k){var p=k.split('-');return (+p[1])+'/'+(+p[2]);}
+  function build(){
+    var inc=chk.checked,map={};
+    items.forEach(function(it){
+      if(!inc&&it.n>=7)return;
+      it.dates.forEach(function(d){(map[d]=map[d]||[]).push(it);});
+    });
+    box.innerHTML='';
+    for(var k=0;k<3;k++){
+      var y=today.getFullYear(),m=today.getMonth()+k;
+      var first=new Date(y,m,1);y=first.getFullYear();m=first.getMonth();
+      var days=new Date(y,m+1,0).getDate();
+      var h='<div class="cal-month"><h4>'+y+'年'+(m+1)+'月</h4><div class="cal-grid">';
+      DOW.forEach(function(w){h+='<div class="cal-dow">'+w+'</div>';});
+      for(var i=0;i<first.getDay();i++)h+='<div></div>';
+      for(var d=1;d<=days;d++){
+        var key=iso(y,m,d),ev=map[key],cls='cal-day',dots='';
+        if(key<todayIso)cls+=' past';
+        if(key===todayIso)cls+=' today';
+        if(ev){
+          cls+=' has';
+          if(ev.some(function(e){return e.type==='required';}))dots+='<span class="dot dot-req"></span>';
+          if(ev.some(function(e){return e.type==='notrequired';}))dots+='<span class="dot dot-not"></span>';
+        }
+        h+='<button type="button" class="'+cls+(key===sel&&ev?' sel':'')+'" data-d="'+key+'"'+(ev?'':' disabled')+'>'+d+'<span class="cal-dots">'+dots+'</span></button>';
       }
-      h+='<button type="button" class="'+cls+'" data-d="'+key+'"'+(ev?'':' disabled')+'>'+d+'<span class="cal-dots">'+dots+'</span></button>';
+      box.insertAdjacentHTML('beforeend',h+'</div></div>');
     }
-    box.insertAdjacentHTML('beforeend',h+'</div></div>');
+    if(sel&&map[sel])render(map[sel]);else close();
+    box._map=map;
   }
   function close(){sel=null;list.hidden=true;list.innerHTML='';box.querySelectorAll('.sel').forEach(function(b){b.classList.remove('sel');});}
+  function cmp(a,b){return a.n-b.n||(a.first<b.first?-1:a.first>b.first?1:0)||a.name.localeCompare(b.name,'ja');}
+  function period(it){
+    if(it.n===1)return md(it.first)+'のみ';
+    var consecutive=(new Date(it.last)-new Date(it.first))/864e5+1===it.n;
+    return consecutive?md(it.first)+'～'+md(it.last)+'（全'+it.n+'日）':md(it.first)+'～'+md(it.last)+'（'+it.n+'日開催）';
+  }
+  function col(cls,title,arr){
+    var h='<div class="day-col '+cls+'"><h5>'+title+'（'+arr.length+'件）</h5>';
+    if(!arr.length)h+='<div class="day-none">該当なし</div>';
+    arr.slice().sort(cmp).forEach(function(ev){
+      h+='<div class="day-item'+(ev.isNew?' is-new':'')+'">'+(ev.isNew?'<div class="tags"><span class="tag tag-new">NEW</span></div>':'')+'<div class="nm">'+esc(ev.name)+'</div><div>'+esc(ev.fac)+'／'+esc(ev.pref)+'</div><div class="period">'+period(ev)+'</div>'+(ev.url?'<div><a href="'+esc(ev.url)+'" target="_blank" rel="noopener noreferrer">公式URL</a></div>':'')+'</div>';
+    });
+    return h+'</div>';
+  }
+  function render(evs){
+    var p=sel.split('-'),dt=new Date(+p[0],+p[1]-1,+p[2]);
+    var h='<h4><span>'+p[0]+'/'+p[1]+'/'+p[2]+'（'+DOW[dt.getDay()]+'）開催のイベント</span><button type="button" id="day-close">選択を解除</button></h4><div class="day-cols">'
+      +col('req','応募が必要',evs.filter(function(e){return e.type==='required';}))
+      +col('not','応募不要',evs.filter(function(e){return e.type==='notrequired';}))+'</div>';
+    list.innerHTML=h;list.hidden=false;
+    document.getElementById('day-close').onclick=function(){close();build();};
+  }
   box.addEventListener('click',function(e){
     var b=e.target.closest('.cal-day.has');if(!b)return;
     var key=b.dataset.d;
     if(sel===key){close();return;}
     close();sel=key;b.classList.add('sel');
-    var p=key.split('-'),dt=new Date(+p[0],+p[1]-1,+p[2]);
-    var h='<h4><span>'+p[0]+'/'+p[1]+'/'+p[2]+'（'+DOW[dt.getDay()]+'）開催のイベント</span><button type="button" id="day-close">選択を解除</button></h4>';
-    map[key].forEach(function(ev){
-      h+='<div class="day-item'+(ev.isNew?' is-new':'')+'"><div class="tags"><span class="tag '+(ev.type==='required'?'tag-required">応募が必要':'tag-notrequired">応募不要')+'</span>'+(ev.isNew?'<span class="tag tag-new">NEW</span>':'')+'</div><div class="nm">'+esc(ev.name)+'</div><div>'+esc(ev.fac)+'／'+esc(ev.pref)+'</div><a href="'+esc(ev.url)+'" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a></div>';
-    });
-    list.innerHTML=h;list.hidden=false;
-    document.getElementById('day-close').onclick=close;
+    render(box._map[key]);
   });
+  chk.addEventListener('change',build);
+  build();
 })();
 </script>
 
