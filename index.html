@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="template-version" content="v2">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>首都圏 子どもイベント情報</title>
 <style>
@@ -214,6 +215,9 @@
     header h1 { font-size: 1.2rem; }
     .tab-btn { font-size: 0.82rem; padding: 10px 4px; }
   }
+  .card .facility.big { font-size: 0.9rem; }
+  .card .info-row a { color: var(--color-accent); }
+  .card .pref-hide { display: none; }
 </style>
 </head>
 <body>
@@ -221,7 +225,7 @@
 <header>
   <h1>首都圏 子どもイベント情報</h1>
   <p>埼玉県・東京都・千葉県・神奈川県で開催される、小学生を中心とした子ども向けイベントまとめ</p>
-  <p id="last-updated">最終更新：2026年10月10日（土）07:30（日本時間）</p>
+  <p id="last-updated">読み込み中…</p>
 </header>
 
 <div class="container">
@@ -237,1015 +241,11 @@
     <div class="day-list" id="day-list" hidden></div>
   </section>
   <div class="tabs">
-    <button class="tab-btn active" onclick="showTab('required')">応募が必要なイベント</button>
-    <button class="tab-btn" onclick="showTab('notrequired')">応募不要なイベント</button>
+    <button class="tab-btn active" data-tab="required">応募が必要なイベント</button>
+    <button class="tab-btn" data-tab="notrequired">応募不要なイベント</button>
   </div>
-
-  <!-- ============ 応募が必要 ============ -->
-  <div id="required" class="tab-content active">
-
-    <div class="pref-section">
-      <div class="pref-title">埼玉県</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-10-17">
-          <span class="facility">埼玉県立川の博物館</span>
-          <h3>ジュズダマでブレスレットづくり</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/17（土）10:00〜11:30／13:30〜15:00</div>
-          <div class="info-row"><b>場所：</b>埼玉県寄居町</div>
-          <div class="info-row"><b>対象：</b>小学3年生以上</div>
-          <div class="info-row"><b>料金：</b>200円（事前申込で入館料免除）</div>
-          <div class="info-row"><b>参加方法：</b>Webフォーム／電話等で事前申込（先着、定員15名になり次第終了）</div>
-          <a class="official" href="https://www.river-museum.jp/ev-post/%e3%82%b8%e3%83%a5%e3%82%ba%e3%83%80%e3%83%9e%e3%81%a7%e3%83%96%e3%83%ac%e3%82%b9%e3%83%ac%e3%83%83%e3%83%88%e3%81%a5%e3%81%8f%e3%82%8a/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-18">
-          <span class="facility">埼玉県立川の博物館</span>
-          <h3>樹脂粘土でアンモナイトづくり</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）10:30〜12:00／13:30〜15:00</div>
-          <div class="info-row"><b>場所：</b>埼玉県寄居町</div>
-          <div class="info-row"><b>対象：</b>小学生以上（小学生は保護者同伴）</div>
-          <div class="info-row"><b>料金：</b>200円</div>
-          <div class="info-row"><b>参加方法：</b>Webフォーム／電話／FAX／来館で事前申込（先着、各回定員6名になり次第終了、開催日1ヶ月前より受付）</div>
-          <a class="official" href="https://www.river-museum.jp/ev-post/%e6%a8%b9%e8%84%82%e7%b2%98%e5%9c%9f%e3%81%a7%e3%82%a2%e3%83%b3%e3%83%a2%e3%83%8a%e3%82%a4%e3%83%88%e3%81%a5%e3%81%8f%e3%82%8a/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-25">
-          <span class="facility">埼玉県立川の博物館</span>
-          <h3>野草で草木染め</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/25（日）13:30〜15:00</div>
-          <div class="info-row"><b>場所：</b>埼玉県寄居町</div>
-          <div class="info-row"><b>対象：</b>小学3年生以上</div>
-          <div class="info-row"><b>料金：</b>500円（事前申込で入館料免除）</div>
-          <div class="info-row"><b>参加方法：</b>Webフォーム／電話／来館で事前申込（先着、定員20名になり次第終了）</div>
-          <a class="official" href="https://www.river-museum.jp/ev-post/%e9%87%8e%e8%8d%89%e3%81%a7%e8%8d%89%e6%9c%a8%e6%9f%93%e3%82%81/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-18">
-          <span class="facility">さいたま市大宮盆栽美術館</span>
-          <h3>はじめての盆栽づくり</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）10:00〜11:30</div>
-          <div class="info-row"><b>場所：</b>さいたま市北区</div>
-          <div class="info-row"><b>対象：</b>小中学生とその保護者（1組=児童1名+保護者、定員10組）</div>
-          <div class="info-row"><b>料金：</b>3,000円（教材費込）</div>
-          <div class="info-row"><b>参加方法：</b>さいたま市生涯学習情報システムで事前申込</div>
-          <div class="info-row"><b>募集開始：</b>2026/9/5（土）12:00　<b>締切：</b>2026/10/18（日）8:30または定員になり次第終了</div>
-          <a class="official" href="https://www.bonsai-art-museum.jp/ja/event/event-10778/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-
-        <div class="card" data-dates="2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-11-02,2026-11-03,2026-11-04,2026-11-05,2026-11-06,2026-11-09,2026-11-10,2026-11-11,2026-11-12,2026-11-13,2026-11-16,2026-11-17,2026-11-18,2026-11-19,2026-11-20,2026-11-23,2026-11-24,2026-11-25,2026-11-26,2026-11-27,2026-11-30,2026-12-01,2026-12-02,2026-12-03,2026-12-04,2026-12-07,2026-12-08,2026-12-09,2026-12-10,2026-12-11,2026-12-14,2026-12-15,2026-12-16,2026-12-17,2026-12-18,2026-12-21,2026-12-22,2026-12-23,2026-12-24,2026-12-25,2026-12-28,2026-12-29,2026-12-30,2026-12-31">
-          <span class="facility">明治なるほどファクトリー坂戸</span>
-          <h3>工場見学</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>通年（平日、1日3回：9:40/11:30/14:00）</div>
-          <div class="info-row"><b>場所：</b>埼玉県坂戸市</div>
-          <div class="info-row"><b>対象：</b>4歳以上（4歳未満は入場不可、中学生以下は保護者同伴）</div>
-          <div class="info-row"><b>料金：</b>無料</div>
-          <div class="info-row"><b>参加方法：</b>Web予約（見学日30日前0:00より受付）または電話（完全予約制）</div>
-          <a class="official" href="https://meiji-sakado.resv.jp/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-08-02,2026-08-03,2026-08-04,2026-08-05,2026-08-06,2026-08-07,2026-08-08,2026-08-09,2026-08-10,2026-08-11,2026-08-12,2026-08-13,2026-08-14,2026-08-15,2026-08-16,2026-08-17,2026-08-18,2026-08-19,2026-08-20,2026-08-21,2026-08-22,2026-08-23,2026-08-24,2026-08-25,2026-08-26,2026-08-27,2026-08-28,2026-08-29,2026-08-30,2026-08-31,2026-09-01,2026-09-02,2026-09-03,2026-09-04,2026-09-05,2026-09-06,2026-09-07,2026-09-08,2026-09-09,2026-09-10,2026-09-11,2026-09-12,2026-09-13,2026-09-14,2026-09-15,2026-09-16,2026-09-17,2026-09-18,2026-09-19,2026-09-20,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01,2026-11-02,2026-11-03,2026-11-04,2026-11-05,2026-11-06,2026-11-07,2026-11-08,2026-11-09,2026-11-10,2026-11-11,2026-11-12,2026-11-13,2026-11-14,2026-11-15,2026-11-16,2026-11-17,2026-11-18,2026-11-19,2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26,2026-11-27,2026-11-28,2026-11-29,2026-11-30">
-          <span class="facility">秩父鉄道沿線</span>
-          <h3>ガリガリ君×秩父鉄道 シールラリー</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>応募期間：</b>2026/8/2（日）〜11/30（月）23:59</div>
-          <div class="info-row"><b>場所：</b>埼玉県熊谷市〜長瀞町ほか秩父鉄道沿線</div>
-          <div class="info-row"><b>対象：</b>親子向け企画（年齢制限なし）</div>
-          <div class="info-row"><b>参加方法：</b>シール3枚を集めWEB応募専用ページで応募（乗車には別途乗車券が必要、抽選80名にエコバッグ）</div>
-          <a class="official" href="https://www.chichibu-railway.co.jp/?p=16358" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-29">
-          <span class="facility">GMOアリーナさいたま</span>
-          <h3>さいたまロゲイニング2026 Vol.2</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/29（日）</div>
-          <div class="info-row"><b>場所：</b>さいたま市中央区</div>
-          <div class="info-row"><b>対象：</b>小学生から参加可（ファミリークラスは成人同伴必須、未就学児無料）</div>
-          <div class="info-row"><b>料金：</b>早割（9/1〜10/31）小学生1,100円、通常（11/1〜11/15）小学生1,650円</div>
-          <div class="info-row"><b>参加方法：</b>チケットシステムで事前チームエントリー</div>
-          <div class="info-row"><b>締切：</b>2026/11/15（日）または先着800名になり次第終了</div>
-          <a class="official" href="https://www.saitama-arena.co.jp/event/rogaining26/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pref-section">
-      <div class="pref-title">東京都</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-11-15">
-          <span class="facility">東京メトロ綾瀬車両基地</span>
-          <h3>メトロファミリーパーク in AYASE 2026</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-lottery">抽選</span>
-            <span class="tag tag-free">無料</span>
-            <span class="tag tag-deadline">まもなく締切</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/15（日）10:00〜15:00</div>
-          <div class="info-row"><b>場所：</b>足立区</div>
-          <div class="info-row"><b>対象：</b>代表者18歳以上（同伴の子どもに年齢制限なし）</div>
-          <div class="info-row"><b>参加方法：</b>事前WEB申込（一般抽選枠10,000名、結果は10/30発表）</div>
-          <div class="info-row"><b>募集開始：</b>2026/9/28（月）10:00　<b>締切：</b>2026/10/12（月・祝）23:59</div>
-          <a class="official" href="https://www.event-metro.jp/familypark2026" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-18,2026-10-25">
-          <span class="facility">板橋区立教育科学館</span>
-          <h3>親子deアマチュア無線交信体験局</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）、10/25（日）各13:30〜15:30</div>
-          <div class="info-row"><b>場所：</b>板橋区</div>
-          <div class="info-row"><b>対象：</b>親子向け（資格不要、小学生も参加可）</div>
-          <div class="info-row"><b>参加方法：</b>事前予約制（10月開催分は9/26(土)9:00より受付、電話またはシステム、1予約2名まで、各回定員5名）</div>
-          <a class="official" href="https://www.itbs-sem.jp/event/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16">
-          <span class="facility">東京国立近代美術館</span>
-          <h3>Family Day こどもまっと 2026</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/8（木）〜10/16（金）のうち指定日（10/10〜12は要予約、他日は予約不要）</div>
-          <div class="info-row"><b>場所：</b>千代田区</div>
-          <div class="info-row"><b>対象：</b>子どもと保護者（美術館デビュー向け、「泣いても笑ってもOK」と明記）</div>
-          <div class="info-row"><b>料金：</b>一般500円、高校生以下無料等</div>
-          <div class="info-row"><b>参加方法：</b>10/10〜12はオンライン日時指定チケット必須（無料対象者も要予約）、他日は当日来館</div>
-          <a class="official" href="https://www.momat.go.jp/events/20261008" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-24">
-          <span class="facility">葛西臨海水族園</span>
-          <h3>親子観察会「トビハゼの調査地をたずねる」</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-lottery">抽選</span>
-            <span class="tag tag-deadline">まもなく締切</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/24（土）9:00〜12:15</div>
-          <div class="info-row"><b>場所：</b>江戸川区（江戸川放水路、現地集合）</div>
-          <div class="info-row"><b>対象：</b>小学3年生以上の小中学生とその保護者（定員15組30名）</div>
-          <div class="info-row"><b>参加方法：</b>公式サイトの受付フォームから事前応募（応募多数の場合は抽選）</div>
-          <div class="info-row"><b>締切：</b>2026/10/14（水）</div>
-          <a class="official" href="https://www.metro.tokyo.lg.jp/information/press/2026/09/2026091018" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-23,2026-10-24,2026-10-25">
-          <span class="facility">吉祥寺駅周辺商店街（武蔵野市）</span>
-          <h3>吉祥寺ハロウィンフェスタ2026</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/23（金）〜10/25（日）</div>
-          <div class="info-row"><b>場所：</b>武蔵野市</div>
-          <div class="info-row"><b>対象：</b>0歳〜小学生の親子</div>
-          <div class="info-row"><b>料金：</b>コースにより異なる（有料）</div>
-          <div class="info-row"><b>参加方法：</b>公式サイトから事前申込（登録後にスタンプ台紙・地図を郵送）</div>
-          <div class="note">※無料抽選枠は受付終了済み。有料コース（参加証）は販売受付中です。</div>
-          <a class="official" href="https://kichijoji-halloween.net/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="pref-section">
-      <div class="pref-title">千葉県</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-10-10,2026-10-11,2026-10-12,2026-10-17,2026-10-18,2026-10-24,2026-10-25">
-          <span class="facility">鴨川シーワールド</span>
-          <h3>秋のナイトアドベンチャー</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/10（土）・11（日）・12（月・祝）・17（土）・18（日）・24（土）・25（日）</div>
-          <div class="info-row"><b>場所：</b>鴨川市</div>
-          <div class="info-row"><b>対象：</b>4歳以上（小人＝小中学生、3歳以下無料）</div>
-          <div class="info-row"><b>料金：</b>大人1,800円／小中学生1,100円／幼児700円</div>
-          <div class="info-row"><b>参加方法：</b>電話予約（各日定員100名、先着、各実施日16:00締切または定員達し次第終了）</div>
-          <a class="official" href="https://www.kamogawa-seaworld.jp/event/event_info/16014/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-01">
-          <span class="facility">千葉県立現代産業科学館</span>
-          <h3>SDGsと海洋プラスチックごみ問題を学ぼう！</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-lottery">抽選</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/1（日）①10:30〜 ②13:30〜</div>
-          <div class="info-row"><b>場所：</b>市川市</div>
-          <div class="info-row"><b>対象：</b>小学4年生〜中学3年生</div>
-          <div class="info-row"><b>料金：</b>50円（保険料）＋入館料</div>
-          <div class="info-row"><b>参加方法：</b>ちば電子申請サービスで事前申込（抽選、各回定員15名）</div>
-          <div class="info-row"><b>募集開始：</b>2026/10/18頃　<b>締切：</b>2026/10/20頃</div>
-          <a class="official" href="https://www.chiba-muse.or.jp/SCIENCE/exhibition/events/event-11196/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="pref-section">
-      <div class="pref-title">神奈川県</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="">
-          <span class="facility">NEXCO中日本（東京・神奈川ほか全12か所）</span>
-          <h3>ハイウェイみて!みて!ツアーズ 2026（11月開催分）</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-lottery">抽選</span>
-            <span class="tag tag-free">無料</span>
-            <span class="tag tag-deadline">まもなく締切</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026年11月開催分（会場・日程は公式ページ参照）</div>
-          <div class="info-row"><b>場所：</b>東京都・神奈川県ほか</div>
-          <div class="info-row"><b>対象：</b>小学生（18歳以上の保護者同伴）</div>
-          <div class="info-row"><b>料金：</b>無料（交通費等は自己負担）</div>
-          <div class="info-row"><b>参加方法：</b>予約サイトで事前応募、応募多数の場合は抽選</div>
-          <div class="info-row"><b>募集開始：</b>2026/9/14（月）14:00　<b>締切：</b>2026/10/13（火）12:00</div>
-          <a class="official" href="https://www.c-nexco.co.jp/topics/2437.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-
-        <div class="card" data-dates="2026-10-18">
-          <span class="facility">新江ノ島水族館</span>
-          <h3>水中ドローン潜航調査ライブ中継 Vol.14</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）9:30〜11:00</div>
-          <div class="info-row"><b>場所：</b>藤沢市</div>
-          <div class="info-row"><b>対象：</b>小学生以上推奨（未就学児は保護者同伴可）</div>
-          <div class="info-row"><b>参加方法：</b>HPより事前申込（先着、定員60名、1組6名まで）</div>
-          <div class="info-row"><b>募集開始：</b>2026/10/16（金）〜定員になり次第終了</div>
-          <a class="official" href="https://www.enosui.com/experienceentry.php?eid=01273" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-07">
-          <span class="facility">かわさき宙と緑の科学館</span>
-          <h3>植物から指示薬を作ろう</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-lottery">抽選</span>
-            <span class="tag tag-paid">有料</span>
-            <span class="tag tag-deadline">まもなく締切</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/7（土）10:00〜11:30</div>
-          <div class="info-row"><b>場所：</b>川崎市多摩区</div>
-          <div class="info-row"><b>対象：</b>小学3〜6年生</div>
-          <div class="info-row"><b>料金：</b>100円</div>
-          <div class="info-row"><b>参加方法：</b>事前応募（抽選）</div>
-          <div class="info-row"><b>締切：</b>2026/10/13（火）17:00</div>
-          <a class="official" href="https://www.nature-kawasaki.jp/class.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-08">
-          <span class="facility">かわさき宙と緑の科学館</span>
-          <h3>子ども創意くふう教室「鏡」</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-lottery">抽選</span>
-            <span class="tag tag-paid">有料</span>
-            <span class="tag tag-deadline">まもなく締切</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/8（日）10:00〜11:45</div>
-          <div class="info-row"><b>場所：</b>川崎市多摩区</div>
-          <div class="info-row"><b>対象：</b>小学4年〜中学生</div>
-          <div class="info-row"><b>料金：</b>100円</div>
-          <div class="info-row"><b>参加方法：</b>事前応募（抽選）</div>
-          <div class="info-row"><b>締切：</b>2026/10/15（木）17:00</div>
-          <a class="official" href="https://www.nature-kawasaki.jp/class.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-07,2026-11-08">
-          <span class="facility">JAXA相模原キャンパス</span>
-          <h3>JAXA相模原キャンパス特別公開2026</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-firstcome">先着</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>現地：2026/11/7（土）10:00〜16:00／オンライン：11/8（日）</div>
-          <div class="info-row"><b>場所：</b>相模原市中央区</div>
-          <div class="info-row"><b>対象：</b>年齢制限なし（家族向け展示あり、保護者同伴推奨）</div>
-          <div class="info-row"><b>参加方法：</b>事前ウェブ予約（先着、定員6,000名）。個別企画は要予約だが14時以降は予約不要で入場可</div>
-          <div class="info-row"><b>募集開始：</b>2026/9/1（火）正午</div>
-          <a class="official" href="https://www.isas.jaxa.jp/outreach/events/004226.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-14,2026-09-15,2026-09-16,2026-09-17,2026-09-18,2026-09-19,2026-09-20,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31">
-          <span class="facility">横浜アンパンマンこどもミュージアム</span>
-          <h3>ハロウィーンイベント</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/9/14（月）〜10/31（土）</div>
-          <div class="info-row"><b>場所：</b>横浜市西区</div>
-          <div class="info-row"><b>対象：</b>1歳以上（1歳以上有料、保護者同伴）</div>
-          <div class="info-row"><b>料金：</b>2,200円〜2,800円</div>
-          <div class="info-row"><b>参加方法：</b>日時指定WEBチケットの事前購入が必要</div>
-          <a class="official" href="https://www.yokohama-anpanman.jp/event/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-10,2026-10-11">
-          <span class="facility">川崎市役所1階アトリウム</span>
-          <h3>こどものまちミニカワサキ2026</h3>
-          <div class="tags">
-            <span class="tag tag-required">応募が必要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/10（土）・10/11（日）10:00〜15:30（最終入場14:30）</div>
-          <div class="info-row"><b>場所：</b>川崎市</div>
-          <div class="info-row"><b>対象：</b>大人と離れてひとりでも動ける子ども〜18歳以下</div>
-          <div class="info-row"><b>料金：</b>500円／日</div>
-          <div class="info-row"><b>参加方法：</b>事前申込フォーム（各日200名）＋当日枠（各日100名）</div>
-          <a class="official" href="https://www.minikawasaki.info/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ============ 応募不要 ============ -->
-  <div id="notrequired" class="tab-content">
-
-    <div class="pref-section">
-      <div class="pref-title">埼玉県</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-10-24,2026-10-25,2026-10-31">
-          <span class="facility">埼玉県立川の博物館</span>
-          <h3>かわはくでハロウィン</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/24（土）・10/25（日）・10/31（土）</div>
-          <div class="info-row"><b>場所：</b>寄居町</div>
-          <div class="info-row"><b>対象：</b>子ども向け企画（どなたでも）</div>
-          <div class="info-row"><b>参加方法：</b>当日会場に直接参加（先着でプレゼント配布、材料なくなり次第終了）</div>
-          <a class="official" href="https://www.river-museum.jp/ev-post/%e3%81%8b%e3%82%8f%e3%81%af%e3%81%8f%e3%81%a7%e3%83%8f%e3%83%ad%e3%82%a6%e3%82%a3%e3%83%b3/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-10,2026-10-17,2026-10-24,2026-10-31">
-          <span class="facility">埼玉県防災学習センター（そなーえ）</span>
-          <h3>どようびワークショップ</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>毎週土曜13:00〜14:00（10/3・10/10・10/17含む）</div>
-          <div class="info-row"><b>場所：</b>鶴ヶ島市</div>
-          <div class="info-row"><b>対象：</b>5歳以上（自分で工作できる子ども）</div>
-          <div class="info-row"><b>参加方法：</b>当日会場参加（材料なくなり次第終了）</div>
-          <a class="official" href="https://saitamabousai.jp/modules/event/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-12,2026-09-13,2026-09-14,2026-09-15,2026-09-16,2026-09-17,2026-09-18,2026-09-19,2026-09-20,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01,2026-11-02,2026-11-03,2026-11-04,2026-11-05,2026-11-06,2026-11-07,2026-11-08">
-          <span class="facility">国営武蔵丘陵森林公園</span>
-          <h3>みのりフェスタ／森のハロウィンナイト</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>みのりフェスタ：2026/9/12（土）〜11/8（日）9:30〜17:00／森のハロウィンナイト（イルミネーション）：10/11（日）〜10/26（月）の土日祝、点灯17:00〜20:30（最終入園20:00、雨天中止）</div>
-          <div class="info-row"><b>場所：</b>滑川町・熊谷市</div>
-          <div class="info-row"><b>対象：</b>制限なし（家族向け）</div>
-          <div class="info-row"><b>料金：</b>入園料（大人450円、中学生以下無料）</div>
-          <div class="info-row"><b>参加方法：</b>当日入園（チケット売り場で入園券購入）</div>
-          <a class="official" href="https://www.shinrinkoen.jp/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01,2026-11-02,2026-11-03">
-          <span class="facility">遊園地むさしの村（加須市）</span>
-          <h3>むさしの村deハロウィン</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/1（木）〜11/3（火・祝）※水曜休園、企画により日時が異なる</div>
-          <div class="info-row"><b>場所：</b>加須市</div>
-          <div class="info-row"><b>対象：</b>子ども向け（全身仮装で来園すると子ども限定プレゼント企画あり）</div>
-          <div class="info-row"><b>料金：</b>入園料別途、工作体験は各300〜600円程度</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、当日参加</div>
-          <a class="official" href="https://www.musashinomura.co.jp/events/halloween/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="pref-section">
-      <div class="pref-title">東京都</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17">
-          <span class="facility">サンシャインシティ</span>
-          <h3>ボボボーボ・ボーボボ展</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/9/30（水）〜10/17（土）</div>
-          <div class="info-row"><b>場所：</b>豊島区</div>
-          <div class="info-row"><b>対象：</b>小学生以下無料（保護者＝中学生以上の同伴必須）</div>
-          <div class="info-row"><b>料金：</b>前売2,000円・当日2,300円（小学生以下無料）</div>
-          <div class="info-row"><b>参加方法：</b>前売／当日券購入</div>
-          <a class="official" href="https://sunshinecity.jp/event/entry-37758.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-01,2026-09-02,2026-09-03,2026-09-04,2026-09-05,2026-09-06,2026-09-07,2026-09-08,2026-09-09,2026-09-10,2026-09-11,2026-09-12,2026-09-13,2026-09-14,2026-09-15,2026-09-16,2026-09-17,2026-09-18,2026-09-19,2026-09-20,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01,2026-11-02,2026-11-03,2026-11-04,2026-11-05,2026-11-06,2026-11-07,2026-11-08,2026-11-09,2026-11-10,2026-11-11,2026-11-12,2026-11-13,2026-11-14,2026-11-15,2026-11-16,2026-11-17,2026-11-18,2026-11-19,2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26,2026-11-27,2026-11-28,2026-11-29,2026-11-30">
-          <span class="facility">サンシャインシティ（サンシャイン水族館）</span>
-          <h3>ざんねんないきもの展３</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/9/1（火）〜11/30（月）（11/12休館予定）</div>
-          <div class="info-row"><b>場所：</b>豊島区</div>
-          <div class="info-row"><b>対象：</b>子ども向け人気書籍とのコラボ企画展（4歳未満無料）</div>
-          <div class="info-row"><b>料金：</b>特別展600円等（プランにより異なる）</div>
-          <div class="info-row"><b>参加方法：</b>当日／前売券購入</div>
-          <a class="official" href="https://sunshinecity.jp/file/aquarium/zannen/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-23,2026-10-24,2026-10-25">
-          <span class="facility">東京国際フォーラム</span>
-          <h3>東京味わいフェスタ2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/23（金）〜10/25（日）</div>
-          <div class="info-row"><b>場所：</b>千代田区（丸の内・有楽町・日比谷・豊洲エリア）</div>
-          <div class="info-row"><b>対象：</b>年齢制限なし（東京都主催の食フェスタ）</div>
-          <div class="info-row"><b>料金：</b>入場無料</div>
-          <div class="info-row"><b>参加方法：</b>自由入場</div>
-          <a class="official" href="https://www.sangyo-rodo.metro.tokyo.lg.jp/nourin/shoku/festa" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-27,2026-11-28,2026-11-29,2026-11-30,2026-12-01,2026-12-02,2026-12-03,2026-12-04,2026-12-05,2026-12-06,2026-12-07,2026-12-08,2026-12-09,2026-12-10,2026-12-11,2026-12-12,2026-12-13,2026-12-14,2026-12-15,2026-12-16,2026-12-17,2026-12-18,2026-12-19,2026-12-20,2026-12-21,2026-12-22,2026-12-23,2026-12-24,2026-12-25,2026-12-26,2026-12-27,2026-12-28,2026-12-29,2026-12-30,2026-12-31,2027-01-01,2027-01-02,2027-01-03">
-          <span class="facility">東京ドームシティ</span>
-          <h3>映画「超かぐや姫！」コラボイベント</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/27（金）〜2027/1/3（日）</div>
-          <div class="info-row"><b>場所：</b>文京区</div>
-          <div class="info-row"><b>対象：</b>子ども向けと明記</div>
-          <div class="info-row"><b>料金：</b>入園料（施設利用料）が必要</div>
-          <div class="info-row"><b>参加方法：</b>通常の遊園地入場</div>
-          <div class="note">※詳細は後日発表予定のため、料金等は変更の可能性あり。</div>
-          <a class="official" href="https://www.at-raku.com/event/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-09,2026-10-10,2026-10-11,2026-10-12">
-          <span class="facility">上野動物園</span>
-          <h3>秋の夜のどうぶつえん</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/9（金）・10（土）・11（日）・12（月・祝）</div>
-          <div class="info-row"><b>場所：</b>台東区</div>
-          <div class="info-row"><b>対象：</b>年齢制限なく家族で入園可（缶バッジワークショップは原則小学生・保護者同伴、当日先着）</div>
-          <div class="info-row"><b>料金：</b>通常入園料のみ</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、当日入園</div>
-          <a class="official" href="https://prtimes.jp/main/html/rd/p/000000012.000185856.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-11,2026-09-12,2026-09-13,2026-09-14,2026-09-15,2026-09-16,2026-09-17,2026-09-18,2026-09-19,2026-09-20,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31">
-          <span class="facility">東京タワー</span>
-          <h3>TOKYO TOWER CITY LIGHT FANTASIA〜Halloween party 2026〜</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/9/11（金）〜10/31（土）連日開催</div>
-          <div class="info-row"><b>場所：</b>港区</div>
-          <div class="info-row"><b>対象：</b>制限なし、家族向け</div>
-          <div class="info-row"><b>料金：</b>メインデッキ展望料金のみ</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、当日券購入</div>
-          <a class="official" href="https://www.tokyotower.co.jp/event/halloween2026/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01">
-          <span class="facility">よみうりランド</span>
-          <h3>よみラン ハロウィン！〜Jump in Party 2026〜</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/9/26（土）〜11/1（日）※休園日除く</div>
-          <div class="info-row"><b>場所：</b>稲城市</div>
-          <div class="info-row"><b>対象：</b>制限なし、ファミリー向け</div>
-          <div class="info-row"><b>料金：</b>通常入園料／ワンデーパス（仮装で割引あり）</div>
-          <div class="info-row"><b>参加方法：</b>当日入園券購入</div>
-          <div class="note">※公式サイト内の該当ページへ直接アクセスできず、複数の二次情報源で内容を確認。来園前に公式サイトでの最新情報のご確認を推奨します。</div>
-          <a class="official" href="https://www.yomiuriland.com/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-03">
-          <span class="facility">港区立みなと科学館</span>
-          <h3>秋の工作フェスティバル！自然編</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/3（火・祝）</div>
-          <div class="info-row"><b>場所：</b>港区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（小学3年生以下は保護者同伴必須）</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、当日参加</div>
-          <a class="official" href="https://minato-kagaku.tokyo/event/2026autumn-fes/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-12">
-          <span class="facility">港区立みなと科学館</span>
-          <h3>ミニ企画展「身近な自然を調べよう」子どもたちによる展示解説</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/12（月・祝）各回20分（13:00/14:00/15:00）</div>
-          <div class="info-row"><b>場所：</b>港区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（小学3年生以下は保護者同伴必須）</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、当日参加</div>
-          <a class="official" href="https://minato-kagaku.tokyo/event/2026autumn-1012/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01,2026-11-02,2026-11-03,2026-11-04,2026-11-05,2026-11-06,2026-11-07,2026-11-08,2026-11-09,2026-11-10,2026-11-11,2026-11-12,2026-11-13,2026-11-14,2026-11-15,2026-11-16,2026-11-17,2026-11-18,2026-11-19,2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26,2026-11-27,2026-11-28,2026-11-29,2026-11-30,2026-12-01,2026-12-02,2026-12-03,2026-12-04,2026-12-05,2026-12-06,2026-12-07,2026-12-08,2026-12-09,2026-12-10,2026-12-11,2026-12-12,2026-12-13,2026-12-14,2026-12-15,2026-12-16,2026-12-17,2026-12-18,2026-12-19,2026-12-20,2026-12-21,2026-12-22,2026-12-23,2026-12-24,2026-12-25,2026-12-26,2026-12-27,2026-12-28,2026-12-29,2026-12-30,2026-12-31,2027-01-01,2027-01-02,2027-01-03,2027-01-04,2027-01-05,2027-01-06,2027-01-07,2027-01-08,2027-01-09,2027-01-10,2027-01-11,2027-01-12,2027-01-13,2027-01-14,2027-01-15,2027-01-16,2027-01-17,2027-01-18,2027-01-19,2027-01-20,2027-01-21,2027-01-22,2027-01-23,2027-01-24">
-          <span class="facility">京王れーるランド</span>
-          <h3>特別企画展「京王帝都電鉄5000系」</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/24（土）〜2027/1/24（日）</div>
-          <div class="info-row"><b>場所：</b>日野市</div>
-          <div class="info-row"><b>対象：</b>年齢制限なし（1歳以上入館料必要）</div>
-          <div class="info-row"><b>料金：</b>展示自体は無料、入館料のみ（1歳以上400円）</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、通常入館</div>
-          <div class="note">※関連企画「思い出募集」（別途応募、締切2026/10/10）あり。詳細は公式サイト参照。</div>
-          <a class="official" href="https://www.keio-rail-land.jp/eventnews/detail/?id=000182" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31">
-          <span class="facility">サンシャインシティ</span>
-          <h3>FUN! FUN! HALLOWEEN 2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/1（木）〜10/31（土）</div>
-          <div class="info-row"><b>場所：</b>豊島区東池袋</div>
-          <div class="info-row"><b>対象：</b>主に小学生以下</div>
-          <div class="info-row"><b>料金：</b>キャンディBOXワークショップ100円、縁日各300円等、一部無料</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、現地参加</div>
-          <a class="official" href="https://prtimes.jp/main/html/rd/p/000001158.000020364.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-30,2026-10-31,2026-11-01">
-          <span class="facility">サンシャインシティ</span>
-          <h3>IKEBUKURO LIVING LOOP × Sunshine City PLAYPARK 2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/30（金）〜11/1（日）11:00〜16:00（荒天中止）</div>
-          <div class="info-row"><b>場所：</b>豊島区（アルパ1階南入口前広場）</div>
-          <div class="info-row"><b>対象：</b>「こどもの遊び場」がコンセプト</div>
-          <div class="info-row"><b>参加方法：</b>事前応募不要、自由参加</div>
-          <a class="official" href="https://sunshinecity.jp/event/entry-36864.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-08,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-29,2026-10-31,2026-11-01">
-          <span class="facility">東京ドームシティ（ASOBono!）</span>
-          <h3>ASOBono! 10月イベント各種</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>ハイハイレース10/8（木）、キッズチャレンジ10/20〜23、バースデーイベント10/29、ハロウィンイベント10/31・11/1</div>
-          <div class="info-row"><b>場所：</b>文京区</div>
-          <div class="info-row"><b>対象：</b>ハイハイレースは0〜1歳程度（未歩行児）、他は施設利用の子ども向け</div>
-          <div class="info-row"><b>料金：</b>入館料のみ</div>
-          <div class="info-row"><b>参加方法：</b>当日受付、事前応募不要</div>
-          <a class="official" href="https://prtimes.jp/main/html/rd/p/000000502.000077656.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-10,2026-10-11,2026-10-12">
-          <span class="facility">葛西臨海水族園</span>
-          <h3>All About MAGURO</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/10（土）〜10/12（月・祝）※10/10は無料開園日</div>
-          <div class="info-row"><b>場所：</b>江戸川区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（ガイドツアーのみ小学生以上、当日抽選）</div>
-          <div class="info-row"><b>料金：</b>10/10は無料開園、他日は通常入園料</div>
-          <div class="info-row"><b>参加方法：</b>自由参加（ガイドツアーのみ当日受付・抽選）</div>
-          <a class="official" href="https://www.metro.tokyo.lg.jp/information/press/2026/09/2026091018" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-26,2026-09-27,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31">
-          <span class="facility">赤坂サカス</span>
-          <h3>赤坂サカス ハロウィン祭2026／スタンプラリー</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>ハロウィン祭：2026/10/24（土）・25（日）／スタンプラリー：9/26（土）〜10/31（土）</div>
-          <div class="info-row"><b>場所：</b>港区</div>
-          <div class="info-row"><b>対象：</b>お菓子パレードは小学生以下無料（ミニエキスプレスは2歳以上有料）</div>
-          <div class="info-row"><b>参加方法：</b>当日受付、事前応募不要</div>
-          <a class="official" href="https://sacas.tokyoevent.net/halloween-3.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31,2026-11-01">
-          <span class="facility">夢の島熱帯植物館</span>
-          <h3>ゆめねつハロウィン・ガーデン2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/9/29（火）〜11/1（日）</div>
-          <div class="info-row"><b>場所：</b>江東区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（おばけカボチャ展示・フォトスポット・スタンプラリー）</div>
-          <div class="info-row"><b>参加方法：</b>自由参加（花のアレンジメント教室のみ要予約）</div>
-          <a class="official" href="https://www.yumenoshima.jp/botanicalhall/event/archive/5692" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="pref-section">
-      <div class="pref-title">千葉県</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-10-24">
-          <span class="facility">東葉高速鉄道 東葉車両基地</span>
-          <h3>東葉車両基地まつり2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/24（土）10:30〜15:00（最終入場14:00）</div>
-          <div class="info-row"><b>場所：</b>八千代市（八千代緑が丘駅から徒歩約15分）</div>
-          <div class="info-row"><b>対象：</b>どなたでも（家族向け車両基地イベント）</div>
-          <div class="info-row"><b>料金：</b>入場無料</div>
-          <div class="info-row"><b>参加方法：</b>見学・販売・飲食は事前申込不要、当日来場</div>
-          <div class="note">※「子ども車掌体験」「レールカート試乗体験」は抽選制で、応募は10/6に締切済み。駐車場・駐輪場なし。</div>
-          <a class="official" href="https://www.toyokosoku.co.jp/events/railyardfes" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-10,2026-10-11">
-          <span class="facility">千葉市科学館（きぼーる）</span>
-          <h3>千葉市科学フェスタ2026（常設展・プラネタリウム無料開放）</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/10（土）・10/11（日）9:00〜19:00</div>
-          <div class="info-row"><b>場所：</b>千葉市中央区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（未就学児は保護者同伴）</div>
-          <div class="info-row"><b>参加方法：</b>当日会場に直接来場</div>
-          <a class="official" href="https://www.chibashi-science-festa.com/event2026/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-10,2026-10-11,2026-10-17,2026-10-18,2026-10-24,2026-10-25,2026-10-31,2026-11-01,2026-11-03,2026-11-07,2026-11-08,2026-11-14,2026-11-15,2026-11-21,2026-11-22,2026-11-28,2026-11-29">
-          <span class="facility">千葉県立現代産業科学館</span>
-          <h3>バイオミメティクスを体験しよう！</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/10（土）〜11/29（日）の企画展開催中の土日祝　①10:30〜 ②14:30〜</div>
-          <div class="info-row"><b>場所：</b>市川市</div>
-          <div class="info-row"><b>対象：</b>どなたでも</div>
-          <div class="info-row"><b>参加方法：</b>当日会場で直接体験（別途入館料）</div>
-          <a class="official" href="https://www.chiba-muse.or.jp/SCIENCE/exhibition/events/event-11224/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-12">
-          <span class="facility">銚子駅前広場ほか</span>
-          <h3>第10回ハロウィンタウンin銚子 キックオフ</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/12（月・祝）</div>
-          <div class="info-row"><b>場所：</b>銚子市</div>
-          <div class="info-row"><b>対象：</b>家族での仮装参加イベント（親子で仮装して商店街を巡るスタンプラリー）</div>
-          <div class="info-row"><b>参加方法：</b>当日自由参加</div>
-          <a class="official" href="https://www.choshikanko.com/event/0406/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-25">
-          <span class="facility">イオンモール銚子</span>
-          <h3>第10回ハロウィンタウンin銚子 ハロウィンパーティー</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/25（日）10:00〜16:00</div>
-          <div class="info-row"><b>場所：</b>銚子市</div>
-          <div class="info-row"><b>対象：</b>家族向けイベント（仮装コンテスト等）</div>
-          <div class="info-row"><b>参加方法：</b>当日自由参加</div>
-          <a class="official" href="https://www.choshikanko.com/event/0407/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-01,2026-10-02,2026-10-03,2026-10-04,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-10,2026-10-11,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-16,2026-10-17,2026-10-18,2026-10-19,2026-10-20,2026-10-21,2026-10-22,2026-10-23,2026-10-24,2026-10-25,2026-10-26,2026-10-27,2026-10-28,2026-10-29,2026-10-30,2026-10-31">
-          <span class="facility">ふなばしアンデルセン公園</span>
-          <h3>コスモスまつり</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/1（木）〜10/31（土）</div>
-          <div class="info-row"><b>場所：</b>船橋市</div>
-          <div class="info-row"><b>対象：</b>どなたでも（子ども向け遊具・広場あり）</div>
-          <div class="info-row"><b>料金：</b>通常入園料（10/26市民無料開放デーの情報あり）</div>
-          <div class="info-row"><b>参加方法：</b>入園料を支払い入園</div>
-          <a class="official" href="https://www.park-funabashi.or.jp/and/aevents/event_cosmosmaturi.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-11,2026-10-12">
-          <span class="facility">幕張メッセ</span>
-          <h3>アイプリワールド2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/11（日）・10/12（月・祝）各日9:00〜19:00</div>
-          <div class="info-row"><b>場所：</b>千葉市美浜区</div>
-          <div class="info-row"><b>対象：</b>中学生以下／高校生以上で料金区分、ファミリーチケットあり</div>
-          <div class="info-row"><b>料金：</b>前売：中学生以下1,500円・高校生以上2,000円</div>
-          <div class="info-row"><b>参加方法：</b>前売／当日チケット購入</div>
-          <a class="official" href="https://aipri.jp/aipriworld/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-08">
-          <span class="facility">千葉県立中央博物館</span>
-          <h3>どんぐり博士入門</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/8（日）10:30〜12:00</div>
-          <div class="info-row"><b>場所：</b>千葉市中央区</div>
-          <div class="info-row"><b>対象：</b>小学生以上（小学生は保護者同伴、定員30名）</div>
-          <div class="info-row"><b>参加方法：</b>当日受付</div>
-          <a class="official" href="https://www.chiba-muse.or.jp/NATURAL/event/events/event-18067/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-03">
-          <span class="facility">千葉県立中央博物館</span>
-          <h3>生態園でツリーラリー</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/3（火・祝）13:00〜16:00</div>
-          <div class="info-row"><b>場所：</b>千葉市中央区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（小学生のみの参加も可と明記）</div>
-          <div class="info-row"><b>参加方法：</b>当日受付</div>
-          <a class="official" href="https://www.chiba-muse.or.jp/NATURAL/event/events/event-17922/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-25">
-          <span class="facility">千葉県立中央博物館</span>
-          <h3>秋の里の生きもの</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/25（日）13:00〜15:30</div>
-          <div class="info-row"><b>場所：</b>君津市（三島神社集合）</div>
-          <div class="info-row"><b>対象：</b>どなたでも（小学生以下は保護者同伴、定員40名）</div>
-          <div class="info-row"><b>料金：</b>50円（保険料）</div>
-          <div class="info-row"><b>参加方法：</b>当日受付</div>
-          <a class="official" href="https://www.chiba-muse.or.jp/NATURAL/event/events/event-17979/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-24">
-          <span class="facility">千葉県立中央博物館</span>
-          <h3>博物館でペーパークラフト</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/24（土）10:00〜11:00、13:30〜14:30</div>
-          <div class="info-row"><b>場所：</b>千葉市中央区</div>
-          <div class="info-row"><b>対象：</b>どなたでも（小学生以下は保護者同伴、各回12組）</div>
-          <div class="info-row"><b>料金：</b>50円（保険料）</div>
-          <div class="info-row"><b>参加方法：</b>当日受付</div>
-          <a class="official" href="https://www.chiba-muse.or.jp/NATURAL/event/events/event-17913/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="pref-section">
-      <div class="pref-title">神奈川県</div>
-      <div class="card-grid">
-
-        <div class="card" data-dates="2026-10-10,2026-10-11,2026-10-12">
-          <span class="facility">新江ノ島水族館</span>
-          <h3>秋だ！祭りだ！ecoまつり！</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/10（土）・10/11（日）・10/12（月・祝）</div>
-          <div class="info-row"><b>場所：</b>藤沢市</div>
-          <div class="info-row"><b>対象：</b>どなたでも（小学生未満は保護者同伴必須）</div>
-          <div class="info-row"><b>参加方法：</b>予約不要・直接来場（水族館入館料別）</div>
-          <a class="official" href="https://www.enosui.com/experienceentry.php?eid=01272" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-18">
-          <span class="facility">はまぎんこども宇宙科学館</span>
-          <h3>生解説プラネタリウム「月に魅せられて〜秋の月めぐり〜」</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）16:00〜</div>
-          <div class="info-row"><b>場所：</b>横浜市磯子区</div>
-          <div class="info-row"><b>対象：</b>4歳から観覧可</div>
-          <div class="info-row"><b>料金：</b>大人600円／子ども（4歳〜中学生）300円＋入館料別</div>
-          <div class="info-row"><b>参加方法：</b>当日券購入可（事前ネットチケットは任意、10/9締切）</div>
-          <a class="official" href="https://www.yokohama-kagakukan.jp/planetarium/schedule.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-25">
-          <span class="facility">三菱みなとみらい技術館</span>
-          <h3>のりものペーパークラフト工作</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/25（日）</div>
-          <div class="info-row"><b>場所：</b>横浜市西区</div>
-          <div class="info-row"><b>対象：</b>未就学〜大人（未就学児は保護者同伴）</div>
-          <div class="info-row"><b>参加方法：</b>当日先着順（各日定員200名、要入館料）</div>
-          <a class="official" href="https://www.mhi.com/jp/company/museum/minatomirai/event/202605papercraft.html" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-18">
-          <span class="facility">神奈川県立生命の星・地球博物館</span>
-          <h3>よろずスタジオ</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）</div>
-          <div class="info-row"><b>場所：</b>小田原市</div>
-          <div class="info-row"><b>対象：</b>子ども向け（未就学児は保護者同伴）</div>
-          <div class="info-row"><b>参加方法：</b>当日受付（要入館料、中学生以下入館無料）</div>
-          <a class="official" href="https://nh.kanagawa-museum.jp/event/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-09,2026-10-10,2026-10-11,2026-10-12">
-          <span class="facility">横浜赤レンガ倉庫</span>
-          <h3>BAY WALK MARKET 2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/9（金）〜10/12（月・祝）（一部エリアは10/10〜10/12）</div>
-          <div class="info-row"><b>場所：</b>横浜市中区（ハンマーヘッド等）</div>
-          <div class="info-row"><b>対象：</b>家族向け（子どもの参加条件は公式サイトで詳細確認推奨）</div>
-          <div class="info-row"><b>料金：</b>入場無料（一部コンテンツは有料）</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、自由参加（ドッグレースのみ別途予約制）</div>
-          <a class="official" href="https://www.yokohama-akarenga.jp/event/baywalk-market/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-10-17,2026-10-18">
-          <span class="facility">横浜赤レンガ倉庫</span>
-          <h3>YOKOHAMA URBAN SPORTS FESTIVAL '26</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/17（土）・10/18（日）11:00〜20:00（雨天中止）</div>
-          <div class="info-row"><b>場所：</b>横浜市中区（赤レンガ倉庫イベント広場・赤レンガパーク）</div>
-          <div class="info-row"><b>対象：</b>大人から子どもまで体験可（スケートボード、ブレイキン、パルクール等8種目、年齢制限の詳細は公式未記載）</div>
-          <div class="info-row"><b>料金：</b>入場無料</div>
-          <div class="info-row"><b>参加方法：</b>予約不要、自由参加</div>
-          <a class="official" href="https://www.yokohama-akarenga.jp/event/yusf/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-                <div class="card">
-          <span class="facility">横浜赤レンガ倉庫</span>
-          <h3>ALL AMERICAN FOOD FESTIVAL '26</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-                        <span class="tag tag-free">無料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/17（土）・10/18（日）11:00〜20:00（L.O.19:30、荒天中止）</div>
-          <div class="info-row"><b>場所：</b>横浜市中区（赤レンガ倉庫イベント広場）</div>
-          <div class="info-row"><b>対象：</b>家族や友人と楽しめるフードイベント（年齢制限の記載なし）</div>
-          <div class="info-row"><b>料金：</b>入場無料（飲食代は別途）</div>
-          <div class="info-row"><b>参加方法：</b>申込不要、当日直接来場</div>
-          <a class="official" href="https://www.yokohama-akarenga.jp/event/american-fes/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-<div class="card">
-          <span class="facility">横浜赤レンガ倉庫</span>
-          <h3>横浜おいも万博2026</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/9（金）〜10/13（火）</div>
-          <div class="info-row"><b>場所：</b>横浜市中区</div>
-          <div class="info-row"><b>対象：</b>家族向けフードイベント</div>
-          <div class="info-row"><b>料金：</b>前売500円・当日700円</div>
-          <div class="info-row"><b>参加方法：</b>前売／当日券購入</div>
-          <a class="official" href="https://www.yokohama-akarenga.jp/event/oimo-event/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        <div class="card" data-dates="2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26,2026-11-27,2026-11-28,2026-11-29,2026-11-30,2026-12-01,2026-12-02,2026-12-03,2026-12-04,2026-12-05,2026-12-06,2026-12-07,2026-12-08,2026-12-09,2026-12-10,2026-12-11,2026-12-12,2026-12-13,2026-12-14,2026-12-15,2026-12-16,2026-12-17,2026-12-18,2026-12-19,2026-12-20,2026-12-21,2026-12-22,2026-12-23,2026-12-24,2026-12-25">
-          <span class="facility">横浜赤レンガ倉庫</span>
-          <h3>Christmas Market in 横浜赤レンガ倉庫</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-            <span class="tag tag-paid">有料</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/11/20（金）〜12/25（金）</div>
-          <div class="info-row"><b>場所：</b>横浜市中区</div>
-          <div class="info-row"><b>対象：</b>家族向けタグあり</div>
-          <div class="info-row"><b>料金：</b>500円〜</div>
-          <div class="info-row"><b>参加方法：</b>前売／当日券購入</div>
-          <a class="official" href="https://www.yokohama-akarenga.jp/christmas/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-        
-        <div class="card" data-dates="2026-10-18,2026-11-15">
-          <span class="facility">こどもの国</span>
-          <h3>紙芝居ライブ</h3>
-          <div class="tags">
-            <span class="tag tag-notrequired">応募不要</span>
-          </div>
-          <div class="info-row"><b>開催日：</b>2026/10/18（日）・11/15（日）</div>
-          <div class="info-row"><b>場所：</b>横浜市青葉区</div>
-          <div class="info-row"><b>対象：</b>子ども向け紙芝居の実演（家族向け）</div>
-          <div class="info-row"><b>参加方法：</b>予約不要（入園料別途の可能性あり）</div>
-          <a class="official" href="https://www.kodomonokuni.org/calendar/" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
+  <div id="required" class="tab-content active"></div>
+  <div id="notrequired" class="tab-content"></div>
 </div>
 
 <footer>
@@ -1254,100 +254,138 @@
 </footer>
 
 <script>
-function showTab(id) {
-  document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
-  document.querySelectorAll('.tab-btn').forEach(function(el){ el.classList.remove('active'); });
-  document.getElementById(id).classList.add('active');
-  event.currentTarget.classList.add('active');
-}
-
 (function(){
-  var DOW=['日','月','火','水','木','金','土'];
-  var today=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Tokyo'}));
-  var pad=function(n){return n<10?'0'+n:''+n;};
-  var iso=function(y,m,d){return y+'-'+pad(m+1)+'-'+pad(d);};
-  var todayIso=iso(today.getFullYear(),today.getMonth(),today.getDate());
-  var items=[];
-  document.querySelectorAll('.card[data-dates]').forEach(function(c){
-    var dates=c.dataset.dates.split(',').filter(Boolean).sort();
-    if(!dates.length)return;
-    items.push({
-      type:c.closest('.tab-content').id,
-      name:c.querySelector('h3').textContent,
-      fac:(c.querySelector('.facility')||{}).textContent||'',
-      pref:c.closest('.pref-section').querySelector('.pref-title').textContent,
-      url:(c.querySelector('a.official')||{}).href||'',
-      isNew:c.classList.contains('is-new')||!!c.querySelector('.tag-new'),
-      dates:dates,n:dates.length,first:dates[0],last:dates[dates.length-1]
+var PREFS=['埼玉県','東京都','千葉県','神奈川県'];
+var WD=['日','月','火','水','木','金','土'];
+function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function pd(k){var p=k.split('-');return new Date(+p[0],+p[1]-1,+p[2]);}
+function pad(n){return n<10?'0'+n:''+n;}
+function key(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());}
+function md(k){var p=k.split('-');return (+p[1])+'/'+(+p[2]);}
+function jpToday(){var f=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'});return f.format(new Date());}
+var TODAY=jpToday(), evs=[], sel=null, showLong=false;
+var calBox=document.getElementById('cal-months'), list=document.getElementById('day-list');
+
+function dayDiff(a,b){return Math.round((pd(b)-pd(a))/86400000);}
+function lastDate(e){return e.dates&&e.dates.length?e.dates[e.dates.length-1]:null;}
+function visible(e){
+  var l=lastDate(e);
+  if(l && l<TODAY) return false;
+  if(e.apply_required && e.deadline && e.deadline<TODAY) return false;
+  return true;
+}
+function isNew(e,upd){return e.first_seen===upd;}
+function soon(e){return e.apply_required&&e.deadline&&e.deadline>=TODAY&&dayDiff(TODAY,e.deadline)<=7;}
+function dateLabel(k){var d=pd(k);return d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate()+'（'+WD[d.getDay()]+'）';}
+function period(e){
+  var d=e.dates;
+  if(d.length===1) return md(d[0])+'のみ';
+  if(d.length<=3) return d.map(function(k){return md(k)+'('+WD[pd(k).getDay()]+')';}).join('・');
+  return md(d[0])+'～'+md(d[d.length-1])+'（全'+d.length+'日）';
+}
+function link(u){return '<a class="official" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">公式サイトで詳細を見る</a>';}
+function row(l,v){return v?'<div class="info-row"><b>'+l+'：</b>'+esc(v)+'</div>':'';}
+function card(e,upd){
+  var nw=isNew(e,upd);
+  var t='<span class="tag '+(e.apply_required?'tag-required">応募が必要':'tag-notrequired">応募不要')+'</span>';
+  if(nw) t+='<span class="tag tag-new">NEW</span>';
+  if(soon(e)) t+='<span class="tag tag-deadline">まもなく締切</span>';
+  t+='<span class="tag '+(e.fee_type==='無料'?'tag-free':'tag-paid')+'">'+esc(e.fee_type)+'</span>';
+  if(e.apply_style==='抽選') t+='<span class="tag tag-lottery">抽選</span>';
+  else if(e.apply_style==='先着') t+='<span class="tag tag-firstcome">先着</span>';
+  var h='<div class="card" data-dates="'+esc((e.dates||[]).join(','))+'">';
+  h+='<span class="facility'+(e.apply_required?'':' big')+'">'+esc(e.venue)+'</span>';
+  h+='<h3>'+esc(e.name)+'</h3><div class="tags">'+t+'</div>';
+  h+=row('開催日',e.date_text);
+  h+=row('場所',e.venue+(e.city?'（'+e.city+'）':''));
+  h+=row('対象',e.target);
+  h+=row('料金',e.fee);
+  if(e.apply_required){
+    h+=row('応募締切',e.deadline?dateLabel(e.deadline):'');
+    h+=row('募集開始',e.apply_start?dateLabel(e.apply_start):'');
+    h+=row('応募方式',e.apply_style);
+  }
+  h+=row('参加方法',e.method);
+  h+=row('主催者',e.organizer);
+  h+=row('子どもの参加条件',e.child_condition);
+  h+=row('小学生対象',e.elementary);
+  if(e.note) h+='<div class="note">'+esc(e.note)+'</div>';
+  return h+link(e.url)+'</div>';
+}
+function renderTabs(upd){
+  ['required','notrequired'].forEach(function(id){
+    var req=id==='required', box=document.getElementById(id), h='';
+    PREFS.forEach(function(p){
+      var a=evs.filter(function(e){return e.prefecture===p&&e.apply_required===req;});
+      h+='<div class="pref-section"><div class="pref-title">'+p+'</div>';
+      h+=a.length?'<div class="card-grid">'+a.map(function(e){return card(e,upd);}).join('')+'</div>':'<div class="empty-msg">該当なし</div>';
+      h+='</div>';
     });
+    box.innerHTML=h;
   });
-  var box=document.getElementById('cal-months'),list=document.getElementById('day-list'),chk=document.getElementById('long-toggle'),sel=null;
-  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function md(k){var p=k.split('-');return (+p[1])+'/'+(+p[2]);}
-  function build(){
-    var inc=chk.checked,map={};
-    items.forEach(function(it){
-      if(!inc&&it.n>=7)return;
-      it.dates.forEach(function(d){(map[d]=map[d]||[]).push(it);});
-    });
-    box.innerHTML='';
-    for(var k=0;k<3;k++){
-      var y=today.getFullYear(),m=today.getMonth()+k;
-      var first=new Date(y,m,1);y=first.getFullYear();m=first.getMonth();
-      var days=new Date(y,m+1,0).getDate();
-      var h='<div class="cal-month"><h4>'+y+'年'+(m+1)+'月</h4><div class="cal-grid">';
-      DOW.forEach(function(w){h+='<div class="cal-dow">'+w+'</div>';});
-      for(var i=0;i<first.getDay();i++)h+='<div></div>';
-      for(var d=1;d<=days;d++){
-        var key=iso(y,m,d),ev=map[key],cls='cal-day',dots='';
-        if(key<todayIso)cls+=' past';
-        if(key===todayIso)cls+=' today';
-        if(ev){
-          cls+=' has';
-          if(ev.some(function(e){return e.type==='required';}))dots+='<span class="dot dot-req"></span>';
-          if(ev.some(function(e){return e.type==='notrequired';}))dots+='<span class="dot dot-not"></span>';
-        }
-        h+='<button type="button" class="'+cls+(key===sel&&ev?' sel':'')+'" data-d="'+key+'"'+(ev?'':' disabled')+'>'+d+'<span class="cal-dots">'+dots+'</span></button>';
-      }
-      box.insertAdjacentHTML('beforeend',h+'</div></div>');
+}
+function active(e){return !e.dates||e.dates.length<7||showLong;}
+function byDate(){
+  var m={};
+  evs.forEach(function(e){ if(!e.dates||!active(e))return; e.dates.forEach(function(k){(m[k]=m[k]||[]).push(e);}); });
+  return m;
+}
+function buildCal(){
+  var m=byDate(), t=pd(TODAY), h='';
+  for(var i=0;i<3;i++){
+    var f=new Date(t.getFullYear(),t.getMonth()+i,1), y=f.getFullYear(), mo=f.getMonth();
+    var n=new Date(y,mo+1,0).getDate();
+    h+='<div class="cal-month"><h4>'+y+'年'+(mo+1)+'月</h4><div class="cal-grid">';
+    WD.forEach(function(w){h+='<div class="cal-dow">'+w+'</div>';});
+    for(var b=0;b<f.getDay();b++) h+='<div></div>';
+    for(var d=1;d<=n;d++){
+      var k=y+'-'+pad(mo+1)+'-'+pad(d), a=m[k]||[], cls='cal-day';
+      var rq=a.some(function(e){return e.apply_required;}), nt=a.some(function(e){return !e.apply_required;});
+      if(a.length) cls+=' has'; if(k<TODAY) cls+=' past'; if(k===TODAY) cls+=' today'; if(k===sel) cls+=' sel';
+      h+='<button type="button" class="'+cls+'" data-k="'+k+'"'+(a.length?'':' disabled')+'>'+d+'<span class="cal-dots">'+
+        (rq?'<span class="dot dot-req"></span>':'')+(nt?'<span class="dot dot-not"></span>':'')+'</span></button>';
     }
-    if(sel&&map[sel])render(map[sel]);else close();
-    box._map=map;
+    h+='</div></div>';
   }
-  function close(){sel=null;list.hidden=true;list.innerHTML='';box.querySelectorAll('.sel').forEach(function(b){b.classList.remove('sel');});}
-  function cmp(a,b){return a.n-b.n||(a.first<b.first?-1:a.first>b.first?1:0)||a.name.localeCompare(b.name,'ja');}
-  function period(it){
-    if(it.n===1)return md(it.first)+'のみ';
-    var consecutive=(new Date(it.last)-new Date(it.first))/864e5+1===it.n;
-    return consecutive?md(it.first)+'～'+md(it.last)+'（全'+it.n+'日）':md(it.first)+'～'+md(it.last)+'（'+it.n+'日開催）';
-  }
-  function col(cls,title,arr){
-    var h='<div class="day-col '+cls+'"><h5>'+title+'（'+arr.length+'件）</h5>';
-    if(!arr.length)h+='<div class="day-none">該当なし</div>';
-    arr.slice().sort(cmp).forEach(function(ev){
-      h+='<div class="day-item'+(ev.isNew?' is-new':'')+'">'+(ev.isNew?'<div class="tags"><span class="tag tag-new">NEW</span></div>':'')+'<div class="nm">'+esc(ev.name)+'</div><div>'+esc(ev.fac)+'／'+esc(ev.pref)+'</div><div class="period">'+period(ev)+'</div>'+(ev.url?'<div><a href="'+esc(ev.url)+'" target="_blank" rel="noopener noreferrer">公式URL</a></div>':'')+'</div>';
-    });
-    return h+'</div>';
-  }
-  function render(evs){
-    var p=sel.split('-'),dt=new Date(+p[0],+p[1]-1,+p[2]);
-    var h='<h4><span>'+p[0]+'/'+p[1]+'/'+p[2]+'（'+DOW[dt.getDay()]+'）開催のイベント</span><button type="button" id="day-close">選択を解除</button></h4><div class="day-cols">'
-      +col('req','応募が必要',evs.filter(function(e){return e.type==='required';}))
-      +col('not','応募不要',evs.filter(function(e){return e.type==='notrequired';}))+'</div>';
-    list.innerHTML=h;list.hidden=false;
-    document.getElementById('day-close').onclick=function(){close();build();};
-  }
-  box.addEventListener('click',function(e){
-    var b=e.target.closest('.cal-day.has');if(!b)return;
-    var key=b.dataset.d;
-    if(sel===key){close();return;}
-    close();sel=key;b.classList.add('sel');
-    render(box._map[key]);
+  calBox.innerHTML=h;
+}
+function cmp(a,b){return a.dates.length-b.dates.length||(a.dates[0]<b.dates[0]?-1:a.dates[0]>b.dates[0]?1:0)||a.name.localeCompare(b.name,'ja');}
+function col(cls,title,arr,upd){
+  var h='<div class="day-col '+cls+'"><h5>'+title+'（'+arr.length+'件）</h5>';
+  if(!arr.length) h+='<div class="day-none">該当なし</div>';
+  arr.sort(cmp).forEach(function(e){
+    h+='<div class="day-item'+(isNew(e,upd)?' is-new':'')+'"><div class="nm">'+esc(e.name)+'</div><div>'+esc(e.venue)+'／'+esc(e.prefecture)+'</div><div class="period">'+esc(period(e))+'</div><a href="'+esc(e.url)+'" target="_blank" rel="noopener noreferrer">公式サイト</a></div>';
   });
-  chk.addEventListener('change',build);
-  build();
+  return h+'</div>';
+}
+var UPD='';
+function showDay(){
+  if(!sel){list.hidden=true;list.innerHTML='';return;}
+  var a=byDate()[sel]||[];
+  if(!a.length){sel=null;list.hidden=true;list.innerHTML='';return;}
+  list.hidden=false;
+  list.innerHTML='<h4><span>'+sel.replace(/-/g,'/')+'（'+WD[pd(sel).getDay()]+'）'+'開催のイベント</span><button type="button" id="clr">選択を解除</button></h4><div class="day-cols">'+
+    col('req','応募が必要',a.filter(function(e){return e.apply_required;}),UPD)+col('not','応募不要',a.filter(function(e){return !e.apply_required;}),UPD)+'</div>';
+  document.getElementById('clr').onclick=function(){sel=null;refresh();};
+}
+function refresh(){buildCal();showDay();}
+calBox.addEventListener('click',function(ev){
+  var b=ev.target.closest('.cal-day'); if(!b||b.disabled)return;
+  sel=(sel===b.getAttribute('data-k'))?null:b.getAttribute('data-k'); refresh();
+});
+document.getElementById('long-toggle').addEventListener('change',function(){showLong=this.checked;refresh();});
+document.querySelectorAll('.tab-btn').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tab-btn').forEach(function(x){x.classList.toggle('active',x===b);});
+  document.querySelectorAll('.tab-content').forEach(function(x){x.classList.toggle('active',x.id===b.getAttribute('data-tab'));});
+});});
+fetch('events.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+  UPD=(j.updated_at||'').slice(0,10);
+  evs=(j.events||[]).filter(visible);
+  var u=j.updated_at||'';
+  document.getElementById('last-updated').textContent='最終更新：'+u.replace(/-/g,'/')+'（日本時間）';
+  renderTabs(UPD); refresh();
+}).catch(function(){document.getElementById('last-updated').textContent='データの読み込みに失敗しました';});
 })();
 </script>
-
 </body>
 </html>
