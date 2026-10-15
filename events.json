@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-14 07:20",
+ "updated_at": "2026-10-16 07:30",
  "events": [
   {
    "id": "ev001",
@@ -424,32 +424,6 @@
    "note": ""
   },
   {
-   "id": "ev011",
-   "name": "親子観察会「トビハゼの調査地をたずねる」",
-   "organizer": "葛西臨海水族園",
-   "prefecture": "東京都",
-   "city": "江戸川区（江戸川放水路、現地集合）",
-   "venue": "葛西臨海水族園",
-   "dates": [
-    "2026-10-24"
-   ],
-   "date_text": "2026/10/24（土）9:00〜12:15",
-   "target": "小学3年生以上の小中学生とその保護者（定員15組30名）",
-   "fee": "",
-   "fee_type": "有料",
-   "method": "公式サイトの受付フォームから事前応募（応募多数の場合は抽選）",
-   "apply_required": true,
-   "apply_style": "抽選",
-   "apply_start": null,
-   "deadline": "2026-10-14",
-   "child_condition": "小学3年生以上の小中学生とその保護者（定員15組30名）",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.metro.tokyo.lg.jp/information/press/2026/09/2026091018",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
    "id": "ev012",
    "name": "吉祥寺ハロウィンフェスタ2026",
    "organizer": "吉祥寺駅周辺商店街（武蔵野市）",
@@ -559,32 +533,6 @@
    "url": "https://www.enosui.com/experienceentry.php?eid=01273",
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
-   "id": "ev018",
-   "name": "子ども創意くふう教室「鏡」",
-   "organizer": "かわさき宙と緑の科学館",
-   "prefecture": "神奈川県",
-   "city": "川崎市多摩区",
-   "venue": "かわさき宙と緑の科学館",
-   "dates": [
-    "2026-11-08"
-   ],
-   "date_text": "2026/11/8（日）10:00〜11:45",
-   "target": "小学4年〜中学生",
-   "fee": "100円",
-   "fee_type": "有料",
-   "method": "事前応募（抽選）",
-   "apply_required": true,
-   "apply_style": "抽選",
-   "apply_start": null,
-   "deadline": "2026-10-15",
-   "child_condition": "小学4年〜中学生",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.nature-kawasaki.jp/class.html",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-12",
    "note": ""
   },
   {
@@ -2128,6 +2076,32 @@
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-10",
    "note": ""
+  },
+  {
+   "id": "ev063",
+   "name": "早稲田祭2026 親子ワークショップ『きらいからうまれる』",
+   "organizer": "早稲田祭2026／早稲田大学",
+   "prefecture": "東京都",
+   "city": "新宿区",
+   "venue": "早稲田大学 早稲田キャンパス14号館4階 ラーニングコモンズ",
+   "dates": [
+    "2026-11-08"
+   ],
+   "date_text": "2026/11/08（日）10:30～12:00／14:00～15:30",
+   "target": "小学1～6年生とその保護者（きょうだい同伴可）",
+   "fee": "無料",
+   "fee_type": "無料",
+   "method": "Googleフォームで申込（先着・定員到達で受付終了）",
+   "apply_required": true,
+   "apply_style": "先着",
+   "apply_start": null,
+   "deadline": null,
+   "child_condition": "各回 子ども15名・保護者15名。保護者同伴",
+   "elementary": "小学生対象を明記",
+   "url": "https://www.waseda.jp/fedu/edu/?p=21193",
+   "first_seen": "2026-10-16",
+   "last_verified": "2026-10-16",
+   "note": "締切日の記載なし。定員に達し次第終了"
   }
  ]
 }
