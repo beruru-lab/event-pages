@@ -1,32 +1,6 @@
 {
- "updated_at": "2026-10-16 07:30",
+ "updated_at": "2026-10-18 07:30",
  "events": [
-  {
-   "id": "ev001",
-   "name": "ジュズダマでブレスレットづくり",
-   "organizer": "埼玉県立川の博物館",
-   "prefecture": "埼玉県",
-   "city": "寄居町",
-   "venue": "埼玉県立川の博物館",
-   "dates": [
-    "2026-10-17"
-   ],
-   "date_text": "2026/10/17（土）10:00〜11:30／13:30〜15:00",
-   "target": "小学3年生以上",
-   "fee": "200円（事前申込で入館料免除）",
-   "fee_type": "有料",
-   "method": "Webフォーム／電話等で事前申込（先着、定員15名になり次第終了）",
-   "apply_required": true,
-   "apply_style": "先着",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "小学3年生以上",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.river-museum.jp/ev-post/%e3%82%b8%e3%83%a5%e3%82%ba%e3%83%80%e3%83%9e%e3%81%a7%e3%83%96%e3%83%ac%e3%82%b9%e3%83%ac%e3%83%83%e3%83%88%e3%81%a5%e3%81%8f%e3%82%8a/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
   {
    "id": "ev002",
    "name": "樹脂粘土でアンモナイトづくり",
@@ -102,7 +76,7 @@
    "elementary": "小学生も参加可能",
    "url": "https://www.bonsai-art-museum.jp/ja/event/event-10778/",
    "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
+   "last_verified": "2026-10-18",
    "note": ""
   },
   {
@@ -390,40 +364,6 @@
    "note": ""
   },
   {
-   "id": "ev010",
-   "name": "Family Day こどもまっと 2026",
-   "organizer": "東京国立近代美術館",
-   "prefecture": "東京都",
-   "city": "千代田区",
-   "venue": "東京国立近代美術館",
-   "dates": [
-    "2026-10-08",
-    "2026-10-09",
-    "2026-10-10",
-    "2026-10-11",
-    "2026-10-12",
-    "2026-10-13",
-    "2026-10-14",
-    "2026-10-15",
-    "2026-10-16"
-   ],
-   "date_text": "2026/10/8（木）〜10/16（金）のうち指定日（10/10〜12は要予約、他日は予約不要）",
-   "target": "子どもと保護者（美術館デビュー向け、「泣いても笑ってもOK」と明記）",
-   "fee": "一般500円、高校生以下無料等",
-   "fee_type": "有料",
-   "method": "10/10〜12はオンライン日時指定チケット必須（無料対象者も要予約）、他日は当日来館",
-   "apply_required": true,
-   "apply_style": "予約",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "子どもと保護者（美術館デビュー向け、「泣いても笑ってもOK」と明記）",
-   "elementary": "小学生も参加可能",
-   "url": "https://www.momat.go.jp/events/20261008",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
    "id": "ev012",
    "name": "吉祥寺ハロウィンフェスタ2026",
    "organizer": "吉祥寺駅周辺商店街（武蔵野市）",
@@ -506,7 +446,7 @@
    "elementary": "小学生対象を明記",
    "url": "https://www.chiba-muse.or.jp/SCIENCE/exhibition/events/event-11196/",
    "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
+   "last_verified": "2026-10-18",
    "note": ""
   },
   {
@@ -830,49 +770,6 @@
    "child_condition": "子ども向け（全身仮装で来園すると子ども限定プレゼント企画あり）",
    "elementary": "小学生も参加可能",
    "url": "https://www.musashinomura.co.jp/events/halloween/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
-   "id": "ev026",
-   "name": "ボボボーボ・ボーボボ展",
-   "organizer": "サンシャインシティ",
-   "prefecture": "東京都",
-   "city": "豊島区",
-   "venue": "サンシャインシティ",
-   "dates": [
-    "2026-09-30",
-    "2026-10-01",
-    "2026-10-02",
-    "2026-10-03",
-    "2026-10-04",
-    "2026-10-05",
-    "2026-10-06",
-    "2026-10-07",
-    "2026-10-08",
-    "2026-10-09",
-    "2026-10-10",
-    "2026-10-11",
-    "2026-10-12",
-    "2026-10-13",
-    "2026-10-14",
-    "2026-10-15",
-    "2026-10-16",
-    "2026-10-17"
-   ],
-   "date_text": "2026/9/30（水）〜10/17（土）",
-   "target": "小学生以下無料（保護者＝中学生以上の同伴必須）",
-   "fee": "前売2,000円・当日2,300円（小学生以下無料）",
-   "fee_type": "有料",
-   "method": "前売／当日券購入",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "小学生以下無料（保護者＝中学生以上の同伴必須）",
-   "elementary": "小学生対象を明記",
-   "url": "https://sunshinecity.jp/event/entry-37758.html",
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-10",
    "note": ""
@@ -2100,7 +1997,7 @@
    "elementary": "小学生対象を明記",
    "url": "https://www.waseda.jp/fedu/edu/?p=21193",
    "first_seen": "2026-10-16",
-   "last_verified": "2026-10-16",
+   "last_verified": "2026-10-18",
    "note": "締切日の記載なし。定員に達し次第終了"
   }
  ]
