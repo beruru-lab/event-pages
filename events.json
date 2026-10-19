@@ -1,32 +1,6 @@
 {
- "updated_at": "2026-10-18 07:30",
+ "updated_at": "2026-10-20 07:20",
  "events": [
-  {
-   "id": "ev002",
-   "name": "樹脂粘土でアンモナイトづくり",
-   "organizer": "埼玉県立川の博物館",
-   "prefecture": "埼玉県",
-   "city": "寄居町",
-   "venue": "埼玉県立川の博物館",
-   "dates": [
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/18（日）10:30〜12:00／13:30〜15:00",
-   "target": "小学生以上（小学生は保護者同伴）",
-   "fee": "200円",
-   "fee_type": "有料",
-   "method": "Webフォーム／電話／FAX／来館で事前申込（先着、各回定員6名になり次第終了、開催日1ヶ月前より受付）",
-   "apply_required": true,
-   "apply_style": "先着",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "小学生以上（小学生は保護者同伴）",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.river-museum.jp/ev-post/%e6%a8%b9%e8%84%82%e7%b2%98%e5%9c%9f%e3%81%a7%e3%82%a2%e3%83%b3%e3%83%a2%e3%83%8a%e3%82%a4%e3%83%88%e3%81%a5%e3%81%8f%e3%82%8a/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
   {
    "id": "ev003",
    "name": "野草で草木染め",
@@ -51,32 +25,6 @@
    "url": "https://www.river-museum.jp/ev-post/%e9%87%8e%e8%8d%89%e3%81%a7%e8%8d%89%e6%9c%a8%e6%9f%93%e3%82%81/",
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
-   "id": "ev004",
-   "name": "はじめての盆栽づくり",
-   "organizer": "さいたま市大宮盆栽美術館",
-   "prefecture": "埼玉県",
-   "city": "さいたま市北区",
-   "venue": "さいたま市大宮盆栽美術館",
-   "dates": [
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/18（日）10:00〜11:30",
-   "target": "小中学生とその保護者（1組=児童1名+保護者、定員10組）",
-   "fee": "3,000円（教材費込）",
-   "fee_type": "有料",
-   "method": "さいたま市生涯学習情報システムで事前申込",
-   "apply_required": true,
-   "apply_style": "先着",
-   "apply_start": "2026-09-05",
-   "deadline": "2026-10-18",
-   "child_condition": "小中学生とその保護者（1組=児童1名+保護者、定員10組）",
-   "elementary": "小学生も参加可能",
-   "url": "https://www.bonsai-art-museum.jp/ja/event/event-10778/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-18",
    "note": ""
   },
   {
@@ -333,7 +281,7 @@
    "elementary": "小学生対象を明記",
    "url": "https://www.saitama-arena.co.jp/event/rogaining26/",
    "first_seen": "2026-10-10",
-   "last_verified": "2026-10-14",
+   "last_verified": "2026-10-20",
    "note": ""
   },
   {
@@ -447,32 +395,6 @@
    "url": "https://www.chiba-muse.or.jp/SCIENCE/exhibition/events/event-11196/",
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-18",
-   "note": ""
-  },
-  {
-   "id": "ev016",
-   "name": "水中ドローン潜航調査ライブ中継 Vol.14",
-   "organizer": "新江ノ島水族館",
-   "prefecture": "神奈川県",
-   "city": "藤沢市",
-   "venue": "新江ノ島水族館",
-   "dates": [
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/18（日）9:30〜11:00",
-   "target": "小学生以上推奨（未就学児は保護者同伴可）",
-   "fee": "",
-   "fee_type": "無料",
-   "method": "HPより事前申込（先着、定員60名、1組6名まで）",
-   "apply_required": true,
-   "apply_style": "先着",
-   "apply_start": "2026-10-16",
-   "deadline": null,
-   "child_condition": "小学生以上推奨（未就学児は保護者同伴可）",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.enosui.com/experienceentry.php?eid=01273",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
    "note": ""
   },
   {
@@ -1755,32 +1677,6 @@
    "note": ""
   },
   {
-   "id": "ev054",
-   "name": "生解説プラネタリウム「月に魅せられて〜秋の月めぐり〜」",
-   "organizer": "はまぎんこども宇宙科学館",
-   "prefecture": "神奈川県",
-   "city": "横浜市磯子区",
-   "venue": "はまぎんこども宇宙科学館",
-   "dates": [
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/18（日）16:00〜",
-   "target": "4歳から観覧可",
-   "fee": "大人600円／子ども（4歳〜中学生）300円＋入館料別",
-   "fee_type": "有料",
-   "method": "当日券購入可（事前ネットチケットは任意、10/9締切）",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "4歳から観覧可",
-   "elementary": "小学生も参加可能",
-   "url": "https://www.yokohama-kagakukan.jp/planetarium/schedule.html",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
    "id": "ev055",
    "name": "のりものペーパークラフト工作",
    "organizer": "三菱みなとみらい技術館",
@@ -1804,86 +1700,6 @@
    "url": "https://www.mhi.com/jp/company/museum/minatomirai/event/202605papercraft.html",
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
-   "id": "ev056",
-   "name": "よろずスタジオ",
-   "organizer": "神奈川県立生命の星・地球博物館",
-   "prefecture": "神奈川県",
-   "city": "小田原市",
-   "venue": "神奈川県立生命の星・地球博物館",
-   "dates": [
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/18（日）",
-   "target": "子ども向け（未就学児は保護者同伴）",
-   "fee": "",
-   "fee_type": "無料",
-   "method": "当日受付（要入館料、中学生以下入館無料）",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "子ども向け（未就学児は保護者同伴）",
-   "elementary": "小学生も参加可能",
-   "url": "https://nh.kanagawa-museum.jp/event/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
-   "id": "ev058",
-   "name": "YOKOHAMA URBAN SPORTS FESTIVAL '26",
-   "organizer": "横浜赤レンガ倉庫",
-   "prefecture": "神奈川県",
-   "city": "横浜市中区（赤レンガ倉庫イベント広場・赤レンガパーク）",
-   "venue": "横浜赤レンガ倉庫",
-   "dates": [
-    "2026-10-17",
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/17（土）・10/18（日）11:00〜20:00（雨天中止）",
-   "target": "大人から子どもまで体験可（スケートボード、ブレイキン、パルクール等8種目、年齢制限の詳細は公式未記載）",
-   "fee": "入場無料",
-   "fee_type": "無料",
-   "method": "予約不要、自由参加",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "大人から子どもまで体験可（スケートボード、ブレイキン、パルクール等8種目、年齢制限の詳細は公式未記載）",
-   "elementary": "小学生も参加可能",
-   "url": "https://www.yokohama-akarenga.jp/event/yusf/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-14",
-   "note": ""
-  },
-  {
-   "id": "ev059",
-   "name": "ALL AMERICAN FOOD FESTIVAL '26",
-   "organizer": "横浜赤レンガ倉庫",
-   "prefecture": "神奈川県",
-   "city": "横浜市中区（赤レンガ倉庫イベント広場）",
-   "venue": "横浜赤レンガ倉庫",
-   "dates": [
-    "2026-10-17",
-    "2026-10-18"
-   ],
-   "date_text": "2026/10/17（土）・10/18（日）11:00〜20:00（L.O.19:30、荒天中止）",
-   "target": "家族や友人と楽しめるフードイベント（年齢制限の記載なし）",
-   "fee": "入場無料（飲食代は別途）",
-   "fee_type": "無料",
-   "method": "申込不要、当日直接来場",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "家族や友人と楽しめるフードイベント（年齢制限の記載なし）",
-   "elementary": "小学生も参加可能",
-   "url": "https://www.yokohama-akarenga.jp/event/american-fes/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-14",
    "note": ""
   },
   {
@@ -1944,7 +1760,7 @@
    "elementary": "小学生も参加可能",
    "url": "https://www.yokohama-akarenga.jp/christmas/",
    "first_seen": "2026-10-10",
-   "last_verified": "2026-10-14",
+   "last_verified": "2026-10-20",
    "note": ""
   },
   {
