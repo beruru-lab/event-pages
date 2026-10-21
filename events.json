@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20 07:20",
+ "updated_at": "2026-10-22 07:30",
  "events": [
   {
    "id": "ev003",
@@ -369,32 +369,6 @@
    "url": "https://www.kamogawa-seaworld.jp/event/event_info/16014/",
    "first_seen": "2026-10-10",
    "last_verified": "2026-10-10",
-   "note": ""
-  },
-  {
-   "id": "ev014",
-   "name": "SDGsと海洋プラスチックごみ問題を学ぼう！",
-   "organizer": "千葉県立現代産業科学館",
-   "prefecture": "千葉県",
-   "city": "市川市",
-   "venue": "千葉県立現代産業科学館",
-   "dates": [
-    "2026-11-01"
-   ],
-   "date_text": "2026/11/1（日）①10:30〜 ②13:30〜",
-   "target": "小学4年生〜中学3年生",
-   "fee": "50円（保険料）＋入館料",
-   "fee_type": "有料",
-   "method": "ちば電子申請サービスで事前申込（抽選、各回定員15名）",
-   "apply_required": true,
-   "apply_style": "抽選",
-   "apply_start": "2026-10-18",
-   "deadline": "2026-10-20",
-   "child_condition": "小学4年生〜中学3年生",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.chiba-muse.or.jp/SCIENCE/exhibition/events/event-11196/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-18",
    "note": ""
   },
   {
