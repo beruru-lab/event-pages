@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04 17:50",
+ "updated_at": "2026-11-06 07:30",
  "events": [
   {
    "id": "ev005",
@@ -1325,6 +1325,87 @@
    "first_seen": "2026-11-04",
    "last_verified": "2026-11-04",
    "note": "営業時間は日により異なる場合あり。事前予約の要否は要確認"
+  },
+  {
+   "apply_start": null,
+   "deadline": null,
+   "first_seen": "2026-11-06",
+   "last_verified": "2026-11-06",
+   "note": "",
+   "child_condition": "記載なし",
+   "target": "関係者、一般",
+   "elementary": "記載なし",
+   "apply_style": "",
+   "id": "ev078",
+   "name": "京成電鉄バスグループお客様感謝フェスティバル2026",
+   "organizer": "京成電鉄バスグループ",
+   "prefecture": "千葉県",
+   "city": "千葉市",
+   "venue": "幕張メッセ 国際展示場 展示ホール1",
+   "dates": [
+    "2026-11-07"
+   ],
+   "date_text": "2026/11/07（土）10:00～15:00",
+   "fee": "無料",
+   "fee_type": "無料",
+   "method": "入場無料（申込手順の記載なし）",
+   "apply_required": false,
+   "url": "https://www.m-messe.co.jp/event/detail/8906"
+  },
+  {
+   "apply_start": null,
+   "deadline": null,
+   "first_seen": "2026-11-06",
+   "last_verified": "2026-11-06",
+   "note": "入場料は主催サイトに記載なし。ビッグサイト一覧で無料",
+   "child_condition": "じゃんけん大会は子供も参加可と案内",
+   "target": "記載なし",
+   "elementary": "記載なし",
+   "apply_style": "",
+   "id": "ev079",
+   "name": "冬スポ!!WINTER SPORTS FESTA season26 東京ビッグサイト",
+   "organizer": "D.O.D.CO.,LTD",
+   "prefecture": "東京都",
+   "city": "江東区",
+   "venue": "東京ビッグサイト",
+   "dates": [
+    "2026-11-07",
+    "2026-11-08"
+   ],
+   "date_text": "2026/11/07（土）・11/08（日）",
+   "fee": "無料",
+   "fee_type": "無料",
+   "method": "入場無料（ビッグサイト掲載・入場区分：一般）",
+   "apply_required": false,
+   "url": "https://www.fuyusupo.jp/"
+  },
+  {
+   "apply_start": null,
+   "deadline": null,
+   "first_seen": "2026-11-06",
+   "last_verified": "2026-11-06",
+   "note": "13日は18時まで、他日10:00-19:00",
+   "child_condition": "記載なし",
+   "target": "記載なし",
+   "elementary": "記載なし",
+   "apply_style": "事前登録",
+   "id": "ev080",
+   "name": "家具メッセバザールin幕張メッセ",
+   "organizer": "株式会社かねたや家具店",
+   "prefecture": "千葉県",
+   "city": "千葉市",
+   "venue": "幕張メッセ 国際展示場 展示ホール9",
+   "dates": [
+    "2026-11-13",
+    "2026-11-14",
+    "2026-11-15"
+   ],
+   "date_text": "2026/11/13（金）～11/15（日）",
+   "fee": "無料",
+   "fee_type": "無料",
+   "method": "事前申込制（来場は事前申込のみ）",
+   "apply_required": true,
+   "url": "https://www.m-messe.co.jp/event/detail/8925"
   }
  ]
 }
