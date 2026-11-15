@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 07:30",
+ "updated_at": "2026-11-16 07:40",
  "events": [
   {
    "id": "ev005",
@@ -230,32 +230,6 @@
    "url": "https://www.chichibu-railway.co.jp/?p=16358",
    "first_seen": "2026-10-10",
    "last_verified": "2026-11-12",
-   "note": ""
-  },
-  {
-   "id": "ev007",
-   "name": "さいたまロゲイニング2026 Vol.2",
-   "organizer": "GMOアリーナさいたま",
-   "prefecture": "埼玉県",
-   "city": "さいたま市中央区",
-   "venue": "GMOアリーナさいたま",
-   "dates": [
-    "2026-11-29"
-   ],
-   "date_text": "2026/11/29（日）",
-   "target": "小学生から参加可（ファミリークラスは成人同伴必須、未就学児無料）",
-   "fee": "早割（9/1〜10/31）小学生1,100円、通常（11/1〜11/15）小学生1,650円",
-   "fee_type": "有料",
-   "method": "チケットシステムで事前チームエントリー",
-   "apply_required": true,
-   "apply_style": "予約",
-   "apply_start": null,
-   "deadline": "2026-11-15",
-   "child_condition": "小学生から参加可（ファミリークラスは成人同伴必須、未就学児無料）",
-   "elementary": "小学生対象を明記",
-   "url": "https://www.saitama-arena.co.jp/event/rogaining26/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-10-26",
    "note": ""
   },
   {
@@ -655,34 +629,7 @@
    "elementary": "小学生も参加可能",
    "url": "https://www.yokohama-akarenga.jp/christmas/",
    "first_seen": "2026-10-10",
-   "last_verified": "2026-10-26",
-   "note": ""
-  },
-  {
-   "id": "ev062",
-   "name": "紙芝居ライブ",
-   "organizer": "こどもの国",
-   "prefecture": "神奈川県",
-   "city": "横浜市青葉区",
-   "venue": "こどもの国",
-   "dates": [
-    "2026-10-18",
-    "2026-11-15"
-   ],
-   "date_text": "2026/10/18（日）・11/15（日）",
-   "target": "子ども向け紙芝居の実演（家族向け）",
-   "fee": "",
-   "fee_type": "有料",
-   "method": "予約不要（入園料別途の可能性あり）",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "子ども向け紙芝居の実演（家族向け）",
-   "elementary": "小学生も参加可能",
-   "url": "https://www.kodomonokuni.org/calendar/",
-   "first_seen": "2026-10-10",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": ""
   },
   {
@@ -818,35 +765,8 @@
    "elementary": "記載なし",
    "url": "https://www.showakinen-koen.jp/event/58732/",
    "first_seen": "2026-11-04",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "開園9:30〜21:00、点灯16:30〜20:30。10/29〜31は入園料のみで日本庭園を観賞可（終了済み）"
-  },
-  {
-   "id": "ev073",
-   "name": "たちかわ楽市2026",
-   "organizer": "たちかわ楽市実行委員会",
-   "prefecture": "東京都",
-   "city": "立川市",
-   "venue": "みどりの文化ゾーン ゆめひろば・花みどり文化センター",
-   "dates": [
-    "2026-11-14",
-    "2026-11-15"
-   ],
-   "date_text": "2026/11/14（土）・11/15（日）10:00〜16:00",
-   "target": "記載なし",
-   "fee": "入場無料",
-   "fee_type": "無料",
-   "method": "申込の記載なし（立川しみん祭・商人祭・農業祭）",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": "",
-   "deadline": null,
-   "child_condition": "記載なし",
-   "elementary": "記載なし",
-   "url": "https://www.showakinen-koen.jp/event/75638/",
-   "first_seen": "2026-11-04",
-   "last_verified": "2026-11-12",
-   "note": "小雨決行・荒天中止。共催：国営昭和記念公園ほか"
   },
   {
    "id": "ev074",
@@ -878,7 +798,7 @@
    "elementary": "記載なし",
    "url": "https://www.showakinen-koen.jp/event/76702/",
    "first_seen": "2026-11-04",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": ""
   },
   {
@@ -1135,19 +1055,19 @@
    "elementary": "記載なし",
    "url": "https://nazoad.com/event/makuhari_nazotoki/",
    "first_seen": "2026-11-04",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "営業時間は日により異なる場合あり。事前予約の要否は要確認"
   },
   {
    "apply_start": null,
    "deadline": null,
    "first_seen": "2026-11-06",
-   "last_verified": "2026-11-12",
-   "note": "13日は18時まで、他日10:00-19:00",
+   "last_verified": "2026-11-16",
+   "note": "11月開催分は終了。12月開催に更新。申込手順は公式で要確認",
    "child_condition": "記載なし",
    "target": "記載なし",
    "elementary": "記載なし",
-   "apply_style": "事前登録",
+   "apply_style": "予約",
    "id": "ev080",
    "name": "家具メッセバザールin幕張メッセ",
    "organizer": "株式会社かねたや家具店",
@@ -1155,16 +1075,15 @@
    "city": "千葉市",
    "venue": "幕張メッセ 国際展示場 展示ホール9",
    "dates": [
-    "2026-11-13",
-    "2026-11-14",
-    "2026-11-15"
+    "2026-12-04",
+    "2026-12-06"
    ],
-   "date_text": "2026/11/13（金）～11/15（日）",
+   "date_text": "2026/12/04（金）〜12/06（日）10:00-19:00（12/4のみ18:00まで）",
    "fee": "無料",
    "fee_type": "無料",
-   "method": "事前申込制（来場は事前申込のみ）",
+   "method": "事前申込制（詳細は公式）",
    "apply_required": true,
-   "url": "https://www.m-messe.co.jp/event/detail/8925"
+   "url": "https://www.kanetaya.com/makuhari_messe/?afe=ID010"
   },
   {
    "id": "ev081",
@@ -1192,34 +1111,8 @@
    "elementary": "小学生も参加可能",
    "url": "https://www.showakinen-koen.jp/event/73361/",
    "first_seen": "2026-11-08",
-   "last_verified": "2026-11-08",
+   "last_verified": "2026-11-16",
    "note": "餅つき・粉ひき・和太鼓等は11/21のみ。雨天時の実施はプログラムごと"
-  },
-  {
-   "id": "ev082",
-   "name": "野鳥観察会2026（11/15）",
-   "organizer": "国営昭和記念公園",
-   "prefecture": "東京都",
-   "city": "立川市",
-   "venue": "昭和記念公園 西立川口集合",
-   "dates": [
-    "2026-11-15"
-   ],
-   "date_text": "2026/11/15（日）10:00〜12:00",
-   "target": "記載なし",
-   "fee": "無料（入園料別）",
-   "fee_type": "無料",
-   "method": "事前WEB申込（開催2週間前9:00〜受付、先着50名）",
-   "apply_required": true,
-   "apply_style": "先着",
-   "apply_start": "2026-11-01",
-   "deadline": null,
-   "child_condition": "記載なし",
-   "elementary": "記載なし",
-   "url": "https://www.showakinen-koen.jp/event/64823/",
-   "first_seen": "2026-11-08",
-   "last_verified": "2026-11-12",
-   "note": "雨天中止。定員到達で終了の可能性。受付中か要確認"
   },
   {
    "id": "ev083",
@@ -1245,35 +1138,8 @@
    "elementary": "記載なし",
    "url": "https://www.saitama-arena.co.jp/schedule/gmo-winter-illumination-in-%e3%81%91%e3%82%84%e3%81%8d%e3%81%b2%e3%82%8d%e3%81%b0%ef%bd%9eif-snow%ef%bd%9e/",
    "first_seen": "2026-11-08",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "dates は期間の最初と最後のみ記載（全日開催）"
-  },
-  {
-   "id": "ev084",
-   "name": "2026さいたまるしぇ in さいたまクリテリウム",
-   "organizer": "さいたま観光国際協会",
-   "prefecture": "埼玉県",
-   "city": "さいたま市",
-   "venue": "けやきひろば（さいたま新都心）",
-   "dates": [
-    "2026-11-14",
-    "2026-11-15"
-   ],
-   "date_text": "2026/11/14（土）・11/15（日）11:00〜17:00",
-   "target": "記載なし",
-   "fee": "無料",
-   "fee_type": "無料",
-   "method": "自由入場（申込の記載なし）",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": "",
-   "deadline": null,
-   "child_condition": "記載なし",
-   "elementary": "記載なし",
-   "url": "https://www.saitama-arena.co.jp/schedule/2026%e3%81%95%e3%81%84%e3%81%9f%e3%81%be%e3%82%8b%e3%81%97%e3%81%87-in-%e3%81%95%e3%81%84%e3%81%9f%e3%81%be%e3%82%af%e3%83%aa%e3%83%86%e3%83%aa%e3%82%a6%e3%83%a0/",
-   "first_seen": "2026-11-08",
-   "last_verified": "2026-11-12",
-   "note": ""
   },
   {
    "id": "ev085",
@@ -1299,34 +1165,8 @@
    "elementary": "記載なし",
    "url": "https://www.m-messe.co.jp/event/detail/8900",
    "first_seen": "2026-11-08",
-   "last_verified": "2026-11-08",
+   "last_verified": "2026-11-16",
    "note": "大会参加の要否は公式サイト(pokemon-card.com)で要確認"
-  },
-  {
-   "id": "ev090",
-   "name": "草笛体験会（11月）",
-   "organizer": "国営昭和記念公園",
-   "prefecture": "東京都",
-   "city": "立川市",
-   "venue": "花みどり文化センター前",
-   "dates": [
-    "2026-11-15"
-   ],
-   "date_text": "2026/11/15（日）13:00〜15:00",
-   "target": "記載なし（子どもから大人まで楽しめる）",
-   "fee": "無料",
-   "fee_type": "無料",
-   "method": "当日受付",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "記載なし",
-   "elementary": "毎月第3日曜開催。雨天中止。演奏＋約30分のレクチャー",
-   "url": "記載なし",
-   "first_seen": "2026-11-10",
-   "last_verified": "2026-11-12",
-   "note": "https://www.showakinen-koen.jp/event/76831/"
   },
   {
    "id": "ev091",
@@ -1353,7 +1193,7 @@
    "elementary": "料金は無料と記載（入園料別）",
    "url": "記載なし",
    "first_seen": "2026-11-10",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "https://www.showakinen-koen.jp/event/75312/"
   },
   {
@@ -1380,7 +1220,7 @@
    "elementary": "受付10:30-11:30、13:00-14:30",
    "url": "記載なし",
    "first_seen": "2026-11-10",
-   "last_verified": "2026-11-10",
+   "last_verified": "2026-11-16",
    "note": "https://www.showakinen-koen.jp/event/12069/"
   },
   {
@@ -1407,7 +1247,7 @@
    "elementary": "枠数に上限あり。予約要否は要確認",
    "url": "記載なし",
    "first_seen": "2026-11-10",
-   "last_verified": "2026-11-10",
+   "last_verified": "2026-11-16",
    "note": "https://event.rakuten.co.jp/furusato/special/fes/"
   },
   {
@@ -1434,7 +1274,7 @@
    "elementary": "子どもの入場可否は公式に記載なし。要確認",
    "url": "記載なし",
    "first_seen": "2026-11-10",
-   "last_verified": "2026-11-10",
+   "last_verified": "2026-11-16",
    "note": "https://chill-classic.jp/news/4JuIvqknp368mJ9DvFn1sM/"
   },
   {
@@ -1486,7 +1326,7 @@
    "elementary": "小学生対象を明記",
    "url": "https://www.showakinen-koen.jp/event/69776/",
    "first_seen": "2026-11-12",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "各回25名。締切記載なし、定員到達で終了の可能性。要確認"
   },
   {
@@ -1513,7 +1353,7 @@
    "elementary": "記載なし",
    "url": "https://saitamasc.jp/abasupo",
    "first_seen": "2026-11-12",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "ダンス・ダブルダッチ・BMX・スラックライン等。雨天等中止"
   },
   {
@@ -1539,7 +1379,7 @@
    "elementary": "記載なし",
    "url": "https://saitamasc.jp/abasupo",
    "first_seen": "2026-11-12",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "さいたまマラソンin埼スタ内。BMX・ダンス・KENDAMA等、各回定員あり。荒天中止"
   },
   {
@@ -1565,114 +1405,196 @@
    "elementary": "記載なし",
    "url": "https://www.saitama-arena.co.jp/schedule/love-jazz-time-2026-8/",
    "first_seen": "2026-11-12",
-   "last_verified": "2026-11-12",
+   "last_verified": "2026-11-16",
    "note": "申込要否は公式に記載なし"
   },
   {
-   "id": "ev100",
-   "name": "古着フェス",
-   "organizer": "古着フェス運営",
+   "id": "ev104",
+   "name": "東京コミコン2026",
+   "organizer": "東京コミコン実行委員会",
    "prefecture": "千葉県",
-   "city": "千葉市",
+   "city": "千葉市美浜区",
    "venue": "幕張メッセ",
    "dates": [
-    "2026-11-15"
+    "2026-12-11",
+    "2026-12-13"
    ],
-   "date_text": "2026/11/15（日）",
-   "target": "記載なし",
-   "fee": "500円（前売あり）",
+   "date_text": "2026/12/11（金）〜12/13（日）",
+   "target": "一般",
+   "fee": "3日通し9,900円／当日一日券 一般5,900円・U-18 1,000円・U-15 500円",
    "fee_type": "有料",
-   "method": "当日入場券または前売券で入場",
+   "method": "チケット購入（前売一日券 一般5,500円）",
    "apply_required": false,
    "apply_style": "",
    "apply_start": null,
    "deadline": null,
    "child_condition": "記載なし",
    "elementary": "記載なし",
-   "url": "https://furugi-fes.com/",
-   "first_seen": "2026-11-13",
-   "last_verified": "2026-11-13",
-   "note": "10:00-19:00"
+   "url": "https://tokyocomiccon.jp/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
+   "note": "申込方法の記載なし。U-18・U-15料金区分あり"
   },
   {
-   "id": "ev101",
-   "name": "JOIN-FURUSATO 移住・交流&地域おこしフェア 2026",
-   "organizer": "移住・交流推進機構ほか",
-   "prefecture": "東京都",
-   "city": "江東区",
-   "venue": "東京ビッグサイト",
+   "id": "ev105",
+   "name": "マクハリハンドメイドフェスタ2026",
+   "organizer": "千葉デザイナー学院ほか",
+   "prefecture": "千葉県",
+   "city": "千葉市美浜区",
+   "venue": "幕張メッセ",
    "dates": [
-    "2026-11-14",
-    "2026-11-15"
+    "2026-12-12",
+    "2026-12-13"
    ],
-   "date_text": "2026/11/14（土）・11/15（日）",
-   "target": "記載なし",
-   "fee": "無料",
-   "fee_type": "無料",
-   "method": "自由入場（詳細は公式参照）",
+   "date_text": "2026/12/12（土）11:00-17:30・12/13（日）10:00-16:30",
+   "target": "一般",
+   "fee": "当日1,000円／前売800円／小学生以下無料",
+   "fee_type": "有料",
+   "method": "当日券・前売券",
    "apply_required": false,
    "apply_style": "",
    "apply_start": null,
    "deadline": null,
-   "child_condition": "記載なし",
-   "elementary": "記載なし",
-   "url": "https://www.iju-join.jp/feature_cont/joinfair/",
-   "first_seen": "2026-11-13",
-   "last_verified": "2026-11-13",
-   "note": "11/14 11-17、11/15 10-16"
-  },
-  {
-   "id": "ev102",
-   "name": "巻柏展",
-   "organizer": "国営昭和記念公園",
-   "prefecture": "東京都",
-   "city": "立川市",
-   "venue": "国営昭和記念公園",
-   "dates": [
-    "2026-11-14",
-    "2026-11-15"
-   ],
-   "date_text": "2026/11/14（土）・11/15（日）",
-   "target": "記載なし",
-   "fee": "無料（入園料別）",
-   "fee_type": "無料",
-   "method": "申込の記載なし",
-   "apply_required": false,
-   "apply_style": "",
-   "apply_start": null,
-   "deadline": null,
-   "child_condition": "記載なし",
-   "elementary": "記載なし",
-   "url": "https://www.showakinen-koen.jp/event/59804/",
-   "first_seen": "2026-11-13",
-   "last_verified": "2026-11-13",
+   "child_condition": "小学生以下無料",
+   "elementary": "小学生も参加可能",
+   "url": "https://www.m-handmade.jp/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
    "note": ""
   },
   {
-   "id": "ev103",
-   "name": "花文シーズナルアート2026「クリスマスリース作り」",
+   "id": "ev106",
+   "name": "パンどろぼう展",
+   "organizer": "松屋（主催）",
+   "prefecture": "神奈川県",
+   "city": "横浜市中区",
+   "venue": "横浜赤レンガ倉庫1号館",
+   "dates": [
+    "2026-12-12",
+    "2027-01-11"
+   ],
+   "date_text": "2026/12/12（土）〜2027/01/11（月）",
+   "target": "記載なし",
+   "fee": "記載なし（公式要確認）",
+   "fee_type": "有料",
+   "method": "記載なし",
+   "apply_required": false,
+   "apply_style": "",
+   "apply_start": null,
+   "deadline": null,
+   "child_condition": "記載なし",
+   "elementary": "記載なし",
+   "url": "https://www.yokohama-akarenga.jp/event/pandorobo_2026/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
+   "note": "料金・時間・予約要否は公式特設ページ（akarenga.yafjp.org/event/pandorobou-ten/）で要確認"
+  },
+  {
+   "id": "ev107",
+   "name": "アートリンク in 横浜赤レンガ倉庫『Ice Coming Together』",
+   "organizer": "横浜赤レンガ倉庫",
+   "prefecture": "神奈川県",
+   "city": "横浜市中区",
+   "venue": "横浜赤レンガ倉庫 イベント広場",
+   "dates": [
+    "2026-11-28",
+    "2027-02-14"
+   ],
+   "date_text": "2026/11/28（土）〜2027/02/14（日）",
+   "target": "記載なし",
+   "fee": "記載なし（公式要確認）",
+   "fee_type": "有料",
+   "method": "記載なし",
+   "apply_required": false,
+   "apply_style": "",
+   "apply_start": null,
+   "deadline": null,
+   "child_condition": "記載なし",
+   "elementary": "記載なし",
+   "url": "https://www.yokohama-akarenga.jp/event/artrink2026/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
+   "note": "2027/1/13休場。料金・予約は特設サイトで要確認"
+  },
+  {
+   "id": "ev108",
+   "name": "Sippo Festa（しっぽフェスタ）2026 冬",
    "organizer": "国営昭和記念公園",
    "prefecture": "東京都",
    "city": "立川市",
-   "venue": "国営昭和記念公園",
+   "venue": "国営昭和記念公園 みどりの文化ゾーン ゆめひろば",
    "dates": [
-    "2026-11-15"
+    "2026-12-05",
+    "2026-12-06"
    ],
-   "date_text": "2026/11/15（日）",
+   "date_text": "2026/12/05（土）・12/06（日）10:00-16:00",
    "target": "記載なし",
-   "fee": "有料（金額は公式参照）",
+   "fee": "参加無料（一部有料プログラム・駐車場別途）",
+   "fee_type": "無料",
+   "method": "記載なし（申込の記載なし）",
+   "apply_required": false,
+   "apply_style": "",
+   "apply_start": null,
+   "deadline": null,
+   "child_condition": "記載なし",
+   "elementary": "記載なし",
+   "url": "https://www.showakinen-koen.jp/event/76869/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
+   "note": "雨天決行・荒天中止"
+  },
+  {
+   "id": "ev109",
+   "name": "花と木の実のクラフト教室2026「松ぼっくりのクリスマスツリー」",
+   "organizer": "国営昭和記念公園 花みどり文化センター",
+   "prefecture": "東京都",
+   "city": "立川市",
+   "venue": "花みどり文化センター 研修室",
+   "dates": [
+    "2026-11-27"
+   ],
+   "date_text": "2026/11/27（金）13:30-15:00",
+   "target": "記載なし",
+   "fee": "3,500円（当日現金）",
    "fee_type": "有料",
-   "method": "事前予約",
+   "method": "申込フォーム・先着順（定員12名）",
+   "apply_required": true,
+   "apply_style": "先着",
+   "apply_start": null,
+   "deadline": "2026-11-22",
+   "child_condition": "お子様参加は保護者の付き添いが必要",
+   "elementary": "記載なし",
+   "url": "https://www.showakinen-koen.jp/event/76573/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
+   "note": "受付11/22まで。キャンセルは11/22 16:30まで"
+  },
+  {
+   "id": "ev110",
+   "name": "キッズ空手ヨガ講座（モーニングルーチーンリラックスプログラム）",
+   "organizer": "国営昭和記念公園 花みどり文化センター",
+   "prefecture": "東京都",
+   "city": "立川市",
+   "venue": "花みどり文化センター 講義室",
+   "dates": [
+    "2026-11-28",
+    "2027-01-23"
+   ],
+   "date_text": "2026/11/28（土）、2027/1/10（日）・1/17（日）・1/23（土）9:30-11:30",
+   "target": "記載なし",
+   "fee": "2,200円/人",
+   "fee_type": "有料",
+   "method": "事前予約制（前日までに実施者へ連絡／Googleフォーム）",
    "apply_required": true,
    "apply_style": "予約",
    "apply_start": null,
    "deadline": null,
    "child_condition": "記載なし",
    "elementary": "記載なし",
-   "url": "https://www.showakinen-koen.jp/event/75965/",
-   "first_seen": "2026-11-13",
-   "last_verified": "2026-11-13",
-   "note": "締切は公式で要確認"
+   "url": "https://www.showakinen-koen.jp/event/69820/",
+   "first_seen": "2026-11-16",
+   "last_verified": "2026-11-16",
+   "note": "定員10名/回。申込は開催前日まで"
   }
  ]
 }
