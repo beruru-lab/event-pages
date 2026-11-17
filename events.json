@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16 07:40",
+ "updated_at": "2026-11-17 12:00",
  "events": [
   {
    "id": "ev005",
@@ -629,7 +629,7 @@
    "elementary": "小学生も参加可能",
    "url": "https://www.yokohama-akarenga.jp/christmas/",
    "first_seen": "2026-10-10",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": ""
   },
   {
@@ -765,7 +765,7 @@
    "elementary": "記載なし",
    "url": "https://www.showakinen-koen.jp/event/58732/",
    "first_seen": "2026-11-04",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "開園9:30〜21:00、点灯16:30〜20:30。10/29〜31は入園料のみで日本庭園を観賞可（終了済み）"
   },
   {
@@ -798,7 +798,7 @@
    "elementary": "記載なし",
    "url": "https://www.showakinen-koen.jp/event/76702/",
    "first_seen": "2026-11-04",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": ""
   },
   {
@@ -1111,7 +1111,7 @@
    "elementary": "小学生も参加可能",
    "url": "https://www.showakinen-koen.jp/event/73361/",
    "first_seen": "2026-11-08",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "餅つき・粉ひき・和太鼓等は11/21のみ。雨天時の実施はプログラムごと"
   },
   {
@@ -1193,7 +1193,7 @@
    "elementary": "料金は無料と記載（入園料別）",
    "url": "記載なし",
    "first_seen": "2026-11-10",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "https://www.showakinen-koen.jp/event/75312/"
   },
   {
@@ -1220,7 +1220,7 @@
    "elementary": "受付10:30-11:30、13:00-14:30",
    "url": "記載なし",
    "first_seen": "2026-11-10",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "https://www.showakinen-koen.jp/event/12069/"
   },
   {
@@ -1326,7 +1326,7 @@
    "elementary": "小学生対象を明記",
    "url": "https://www.showakinen-koen.jp/event/69776/",
    "first_seen": "2026-11-12",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "各回25名。締切記載なし、定員到達で終了の可能性。要確認"
   },
   {
@@ -1566,7 +1566,7 @@
    "elementary": "記載なし",
    "url": "https://www.showakinen-koen.jp/event/76573/",
    "first_seen": "2026-11-16",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "受付11/22まで。キャンセルは11/22 16:30まで"
   },
   {
@@ -1593,8 +1593,65 @@
    "elementary": "記載なし",
    "url": "https://www.showakinen-koen.jp/event/69820/",
    "first_seen": "2026-11-16",
-   "last_verified": "2026-11-16",
+   "last_verified": "2026-11-17",
    "note": "定員10名/回。申込は開催前日まで"
+  },
+  {
+   "id": "ev111",
+   "name": "国営公園50周年記念ラリー",
+   "organizer": "国営昭和記念公園",
+   "prefecture": "東京都",
+   "city": "立川市・昭島市",
+   "venue": "花みどり文化センター館内",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "date_text": "2026/11/21（土）・22（日）・23（月・祝）・28（土）・29（日）10:00〜16:00",
+   "target": "記載なし",
+   "fee": "無料（入園料別途）",
+   "fee_type": "無料",
+   "method": "当日受付",
+   "apply_required": false,
+   "apply_style": "",
+   "child_condition": "記載なし",
+   "elementary": "記載なし",
+   "url": "https://www.showakinen-koen.jp/event/77328/",
+   "note": "5か所のラリーポイントでキーワードを集める。雨天決行",
+   "first_seen": "2026-11-17",
+   "last_verified": "2026-11-17",
+   "apply_start": null,
+   "deadline": null
+  },
+  {
+   "id": "ev112",
+   "name": "【工作教室】ヒツジをつくろう",
+   "organizer": "雪印こどもの国牧場（こどもの国）",
+   "prefecture": "神奈川県",
+   "city": "横浜市",
+   "venue": "こどもの国 児童センター",
+   "dates": [
+    "2026-11-22",
+    "2026-11-23"
+   ],
+   "date_text": "2026/11/22（日）・23（月・祝）各日10:30／13:00／14:30",
+   "target": "記載なし",
+   "fee": "1個500円（現金のみ・入園料別途）",
+   "fee_type": "有料",
+   "method": "11/16 9:30頃からインターネットで先着受付。1組単位、各部6組、1組5人以下",
+   "apply_required": true,
+   "apply_style": "先着",
+   "child_condition": "小学3年以下は必ず大人と一緒に参加",
+   "elementary": "記載なし",
+   "url": "https://www.kodomonokuni.org/event_topics/detail.html?id=178",
+   "note": "締切の明記なし。定員到達で終了の可能性",
+   "first_seen": "2026-11-17",
+   "last_verified": "2026-11-17",
+   "apply_start": null,
+   "deadline": null
   }
  ]
 }
